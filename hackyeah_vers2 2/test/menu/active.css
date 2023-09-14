@@ -1,0 +1,18 @@
+/* Dodaj odpowiednie klasy CSS */
+.menu {
+    display: block; /* Domyślne wyświetlanie menu */
+}
+
+.menu-mobile {
+    display: none; /* Ukryj menu rozwijane początkowo */
+}
+
+/* Media query dla małych ekranów */
+@media screen and (max-width: 900px) {
+    .menu {
+        display: none; /* Ukryj menu na małych ekranach */
+    }
+    .menu-mobile {
+        display: block; /* Pokaż menu rozwijane na małych ekranach */
+    }
+}

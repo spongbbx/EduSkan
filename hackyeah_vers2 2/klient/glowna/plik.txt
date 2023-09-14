@@ -1,0 +1,71 @@
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 940) {
+    .col-2{
+        flex-basis: 96%;
+        margin-right: 3%;
+        margin-left: 3%;
+        width: 100%;
+        margin-top: 15%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 764) {
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #0f1b25;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 600px){
+   nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #0f1b25;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}

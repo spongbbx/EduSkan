@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EduSkan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="active.css">
+    <script src="https://kit.fontawesome.com/77165ab45f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- --------------------------------------main----------------------------------- -->
+
+    <div id="main">
+        <div class="kontener">
+            <!-- ----------------------------menu i logo-------------------------- -->
+            <div class="menu" id="menu">
+                <h1 class="logo">EduSkan</h1>
+                <nav>
+                    <ul class="sidemenu" id="sidemenu">
+                        <li><a href="../glowna/index.html">Strona główna</a></li>
+                        <li><a href="#">O projekcie</a></li>
+                        <li><a href="#">Autorzy</a></li>
+                        <li><a href="#">Cele</a></li>
+                    </ul>
+                    <!-- Hamburger icon -->
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </nav>
+
+
+            </div>
+            <!-- --------------------------kolumny------------------------------ -->
+            <div class="col">
+                <!-- ------------tekst----------- -->
+                <div class="col-1">
+                    <div class="teks">
+                        <br>
+                        <h1>Czyżbyś błądził? My pomożemy!</h1> <br>
+                        <p class="tekstp">Z naszym bardzo nowoczesnym systemem już nie musisz się martwić co począć dalej! Wystarczy, że podasz nam kilka informacji, a zmienimy Twoje życie w mgnieniu oka!</p>
+                    </div>
+                </div>
+                <!-- -----------ankieta--------- -->
+                <div class="col-2">
+                    <form action="" class="form">
+                        <h2 class="formularz">ZACZNIJMY!</h2>
+
+                        <div class="inputdiv">
+                            <textarea type="text" placeholder="Jaki jest Twój aktualny status edukacyjny?" class="input"></textarea>
+                        </div>
+
+                        <div class="inputdiv">
+                            <textarea type="text" placeholder="Czym chcesz się zajmować w przyszłości?" class="input"></textarea>
+                        </div>
+
+                        <div class="inputdiv">
+                            <textarea type="text" placeholder="Czy masz jakieś ulubione hobby lub zainteresowania pozanaukowe?" class="input"></textarea>
+                        </div>
+
+                        <div class="inputdiv">
+                            <textarea maxlength="1000" class="input" name="omnie" id="omnie" type="text" rows="8" placeholder="Opisz siebie jak najdokładniej możesz, opowiedz nam o czym zechcesz - im więcej napiszesz, tym dokładniej dobierzemy Ci kierunek"></textarea>
+                        </div>
+                        <div class="guzik">
+                            <button class="button">Analizuj</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ---------------oprojekcie------------ -->
+            <div id="oprojekcie">
+                <div class="kontener">
+                    <div class="row">
+                        <div class="o-col-1">
+                            <img width="735px" height="980px" src="img/przyklad.jpeg">
+                            <!-- zdjęcie -->
+                        </div>
+                        <div class="o-col-2">
+                            <h1 class="sub-title">O projekcie</h1>
+                            <!--Tytuł miejsca-->
+                            <!-- Opis o projekcie -->
+                            <p class="opis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <!--lista-->
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('cos')">Coś</p>
+                                <p class="tab-links" onclick="opentab('technologie')">Technologie</p>
+                            </div>
+                            <!--cele opis-->
+                            <div class="tab-contents active-tab" id="cos">
+                                <p class="opis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            <!--technologie opis-->
+                            <div class="tab-contents" id="technologie">
+                                <p class="opis">Lm.</p>
+                            </div>
+                        </div>
+                        <!-- ---------------------------------Autorzy----------------------------------- -->
+                        <div id="autorzy">
+                            <div class="kontener">
+                                <div class="row">
+                                    <!-- Left Column for Author Details -->
+                                    <div class="a-left-col">
+                                        <!-- Author 1 -->
+                                        <div class="author">
+                                            <img src="img/przyklad.jpeg" alt="Author 1">
+                                            <h2 class="author-name">Autor 1</h2>
+                                            <p class="author-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <!-- Author 2 -->
+                                        <div class="author">
+                                            <img src="img/przyklad.jpeg" alt="Author 2">
+                                            <h2 class="author-name">Autor 2</h2>
+                                            <p class="author-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                        <!-- Author 3 -->
+                                        <div class="author">
+                                            <img src="img/przyklad.jpeg" alt="Author 3">
+                                            <h2 class="author-name">Autor 3</h2>
+                                            <p class="author-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Right Column with "Autorzy" Text -->
+                                    <div class="a-right-col">
+                                        <h1 class="sub-title" style="color: white;">Autorzy</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- ------------stopka----------- -->
+            <div class="stopka">
+                © Szymon Jagiełło | Maksymilian Regner | Sebastian Kloc
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

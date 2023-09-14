@@ -1,0 +1,75 @@
+/*  # --> id */
+/*  . --> class */
+
+/*  -----------------struktury-----------------  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6f7fb;
+    color: #fff;
+}
+
+/* -------------------------------------------main----------------------------------- */
+
+.kontener{
+    background-color: rgba(15, 27, 37);
+    border-radius: 0 0 0 50px;
+    box-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 10vh;
+}
+.menu{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+}
+.menu h1{
+    font-size: 45px;
+    padding-left: 3%;
+}
+.sidemenu{
+    display: flex;
+    list-style: none;
+    margin-left: 25%;
+}
+.sidemenu li{
+    margin-left: 10%;
+}
+.sidemenu li a{
+    display: flex;
+    text-decoration: none;
+    color: rgba(106, 115, 125);
+    font-size: 21px;
+    width: max-content;
+    transition: 0.5s;
+}
+.sidemenu li a:hover{
+    color: rgba(100 100, 100);
+}
+
+/* --------------------------------------------------wynik------------------------------------------------ */
+
+.nazwazawod{
+    color: rgba(15, 27, 37);
+    width: max-content;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+}
+.opiszawod{
+    color: rgba(15, 27, 37);
+    width: 90%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
+}
