@@ -12,3 +12,4 @@ window.addEventListener("scroll", () => {
     menu.classList.remove("shadow");
   }
 });
+
