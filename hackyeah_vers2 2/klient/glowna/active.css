@@ -367,6 +367,10 @@
             animation-delay: 0.5s;
         }
         
+        .a-left-col .sub-title {
+            padding-bottom: 70px;
+        }
+        
         @keyframes appear {
             0% {
                 opacity: 0;
@@ -460,6 +464,15 @@
                 margin: 5% auto 5% auto;
                 padding: 4%;
             }
+            .o-col-2 {
+                padding-top: 7%;
+            }
+            #autorzy {
+                padding-top: 7%;
+            }
+            .a-left-col .sub-title {
+                padding-bottom: 0;
+            }
         }
         
         @media only screen and (max-width: 650px) {
@@ -506,8 +519,18 @@
                 flex-basis: 90%;
                 margin: 0 5%;
             }
+            #technologie {
+                flex-direction: column;
+            }
             #technologie svg {
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
+            }
+            #technologie .svg {
+                margin-top: 5%;
+                font-size: 20px;
+            }
+            h1:not(.logo) {
+                font-size: 35px;
             }
         }
