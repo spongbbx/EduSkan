@@ -124,15 +124,17 @@
                 border-radius: 15px;
                 margin: 0 auto;
                 margin-top: 4%;
-                height: 60vh;
+                height: 55vh;
             }
             
             .author img {
+                display: block;
                 max-width: 250px;
                 max-height: 250px;
                 height: auto;
+                width: min-content;
                 border-radius: 15px;
-                margin: 2% auto 5% auto;
+                margin: 2% auto 5%;
             }
             
             .author-name {
