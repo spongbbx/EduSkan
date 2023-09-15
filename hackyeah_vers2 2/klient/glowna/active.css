@@ -170,7 +170,7 @@
             
             .tekstp {
                 width: min-content;
-                width: 100%;
+                width: 95%;
                 font-size: 25px;
                 color: rgb(144, 151, 156);
                 line-height: 180%;
@@ -382,7 +382,7 @@
             }
             /* Twoje istniejące media query */
             
-            @media only screen and (max-width: 1300px) {
+            @media only screen and (max-width: 1350px) {
                 .col-1 {
                     flex-basis: 96%;
                     margin-right: 3%;
@@ -497,3 +497,4 @@
                         height: 100px;
                     }
                 }
+            }
