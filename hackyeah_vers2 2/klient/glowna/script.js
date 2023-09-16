@@ -44,4 +44,73 @@ analyze_button.addEventListener('click', (e) => {
 
         // bot odpowiedzial, odpowiedz bota to json.answer
     });
-});
+});// Get references to all .author and .o-col-2 elements
+const authorElements = document.querySelectorAll('.author');
+const oCol1Elements = document.querySelectorAll('.o-col-1');
+const oCol2Elements = document.querySelectorAll('.o-col-2');
+let animationTriggered = false; // Flag to track if the animation has been triggered
+
+// Function to check if at least one .author element is in the viewport
+function isAuthorInViewport() {
+    return Array.from(authorElements).some(element => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    });
+}
+
+// Function to add the animation class to .author element when it's in the viewport
+function handleScroll() {
+    // Check if the animation has already been triggered or if .author element is in the viewport
+    if (!animationTriggered && isAuthorInViewport()) {
+        authorElements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+
+        // Set the flag to true to prevent further triggering
+        animationTriggered = true;
+    }
+
+    // Check if .o-col-2 element is in the viewport
+    if (isOCol2InViewport()) {
+        oCol1Elements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+        
+        oCol2Elements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+    }
+}
+
+// Function to check if .o-col-2 element is in the viewport
+function isOCol2InViewport() {
+    return Array.from(oCol2Elements).some(element => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    });
+}
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Trigger the animation for elements already in the viewport on page load
+window.addEventListener('load', handleScroll);
+
+// Manually trigger the scroll event on page load to check initial state
+window.dispatchEvent(new Event('scroll'));
