@@ -23,6 +23,7 @@ analyze_button.addEventListener('click', (e) => {
     
     console.log('Sending request...');
 
+
     // tu sie zaczyna wysylanie requesta, tu powinny byc jakies animacje jak chcecie czy cos
 
     fetch('http://localhost:5000/chatgpt', {
