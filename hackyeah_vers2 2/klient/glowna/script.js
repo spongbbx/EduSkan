@@ -44,10 +44,17 @@ analyze_button.addEventListener('click', (e) => {
 
         // bot odpowiedzial, odpowiedz bota to json.answer
     });
-});// Get references to all .author and .o-col-2 elements
+});
+
+// Get references to all .author and .o-col-2 elements
 const authorElements = document.querySelectorAll('.author');
 const oCol1Elements = document.querySelectorAll('.o-col-1');
 const oCol2Elements = document.querySelectorAll('.o-col-2');
+//Get references to all .goals
+const celElements = document.querySelectorAll('.cele');
+const goalsUpElements = document.querySelectorAll('.goals-up');
+const goalsDownElements = document.querySelectorAll('.goals-down')
+
 let animationTriggered = false; // Flag to track if the animation has been triggered
 
 // Function to check if at least one .author element is in the viewport
@@ -92,7 +99,6 @@ function handleScroll() {
         });
     }
 }
-
 // Function to check if .o-col-2 element is in the viewport
 function isOCol2InViewport() {
     return Array.from(oCol2Elements).some(element => {
@@ -105,7 +111,6 @@ function isOCol2InViewport() {
         );
     });
 }
-
 // Attach the scroll event listener
 window.addEventListener('scroll', handleScroll);
 
