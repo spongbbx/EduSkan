@@ -50,10 +50,7 @@ analyze_button.addEventListener('click', (e) => {
 const authorElements = document.querySelectorAll('.author');
 const oCol1Elements = document.querySelectorAll('.o-col-1');
 const oCol2Elements = document.querySelectorAll('.o-col-2');
-//Get references to all .goals
-const celElements = document.querySelectorAll('.cele');
-const goalsUpElements = document.querySelectorAll('.goals-up');
-const goalsDownElements = document.querySelectorAll('.goals-down')
+const rowceleElements = document.querySelectorAll('.cele');
 
 let animationTriggered = false; // Flag to track if the animation has been triggered
 
@@ -98,10 +95,36 @@ function handleScroll() {
             }
         });
     }
+
+    if (isRowceleInViewport()) {
+        rowceleElements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+        
+        rowceleElements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+    }
 }
 // Function to check if .o-col-2 element is in the viewport
 function isOCol2InViewport() {
     return Array.from(oCol2Elements).some(element => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    });
+}
+
+function isRowceleInViewport() {
+    return Array.from(rowceleElements).some(element => {
         const rect = element.getBoundingClientRect();
         return (
             rect.bottom >= 0 &&
