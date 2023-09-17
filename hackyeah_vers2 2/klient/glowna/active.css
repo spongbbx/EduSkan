@@ -132,11 +132,15 @@
             border-radius: 15px;
             margin: 0 auto;
             height: auto;
-            padding: 25px;
             position: relative;
+            overflow: hidden;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        
+        .author-text {
+            padding: 0 25px 25px 25px;
         }
         
         .appear-on-scroll {
@@ -148,30 +152,18 @@
             max-width: 100%;
             max-height: 100%;
             height: auto;
-            border-radius: 15px;
-            box-shadow: inset 2px 2px 15px -4px rgba(66, 68, 90, 1);
             margin: 0 auto 5% auto;
-        }
-        
-        .author-name {
-            margin-top: 10px;
-            margin-bottom: 7px;
-            display: block;
-            width: max-content;
-            margin: 0% auto;
-            margin-bottom: 4%;
-            font-size: 21px;
         }
         
         .autorzy-text {
             display: block;
             line-height: 130%;
-            font-size: 18px;
         }
         
         .author-text .opis {
             text-align: justify;
             padding-bottom: 20%;
+            font-size: 17px;
         }
         
         .socials {
@@ -296,7 +288,7 @@
             flex-basis: 30%;
             max-width: 100%;
             overflow: hidden;
-            margin-left: 5%;
+            margin-left: 7%;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -542,12 +534,18 @@
                 flex-basis: 90%;
                 margin: 0 5%;
             }
+            .o-col-1 {
+                padding-bottom: 0;
+            }
+            .o-col-2 {
+                padding-top: 0;
+            }
             .author {
                 flex-basis: 40%;
-                margin: 5%;
+                margin: 5% auto 5% auto;
             }
             .socials svg {
-                height: 40px;
+                height: 35px;
             }
         }
         /* Media query for screens 830px or less */
@@ -579,10 +577,8 @@
                 width: 120px;
                 height: 120px;
             }
-            .author {
-                flex-basis: 80%;
-                margin: 5% auto 5% auto;
-                padding: 4%;
+            .author-text .opis {
+                font-size: 15px;
             }
             .o-col-2 {
                 padding-top: 7%;
@@ -594,7 +590,7 @@
                 padding-bottom: 0;
             }
             .socials svg {
-                height: 45px;
+                height: 30px;
             }
         }
         
@@ -625,7 +621,6 @@
                 width: 100%;
             }
             .teks h1 {
-                font-size: 40px;
                 text-align: center;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -642,23 +637,18 @@
                 flex-basis: 90%;
                 margin: 0 5%;
             }
-            .tech1,
-            .tech2 {
-                flex-direction: column;
-                margin: 0 auto;
-            }
             #technologie svg {
-                width: 200px;
-                height: 200px;
+                width: 100px;
+                height: 100px;
             }
             #technologie .svg {
-                margin-top: 15%;
-                font-size: 20px;
+                font-size: 13px;
             }
             h1:not(.logo) {
-                font-size: 35px;
+                font-size: 45px;
             }
             .author {
                 animation-delay: 0;
+                flex-basis: 70%;
             }
         }
