@@ -293,20 +293,13 @@
         }
         
         .o-col-1 {
-            flex-basis: 40%;
+            flex-basis: 30%;
             max-width: 100%;
-            height: auto;
             overflow: hidden;
+            margin-left: 5%;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-        }
-        
-        .o-col-1 img {
-            border-radius: 15px;
-            max-width: 75%;
-            height: 100%;
-            margin: 0 12.5%;
         }
         
         .o-col-2 {
@@ -321,6 +314,11 @@
         .o-col-1,
         .o-col-2 {
             padding: 80px 0;
+        }
+        
+        .o-col-1 h1,
+        .o-col-2 h1 {
+            text-align: center;
         }
         
         .opis {
@@ -352,6 +350,11 @@
         
         .tech1 {
             margin-top: 7%;
+        }
+        
+        .o-col-1 .opis {
+            margin-top: 7%;
+            text-align: justify;
         }
         
         .sub-title {
@@ -534,9 +537,7 @@
                 text-align: center;
                 margin: 0 auto;
             }
-            .o-col-1 {
-                display: none;
-            }
+            .o-col-1,
             .o-col-2 {
                 flex-basis: 90%;
                 margin: 0 5%;
