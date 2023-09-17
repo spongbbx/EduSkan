@@ -23,17 +23,20 @@ analyze_button.addEventListener('click', (e) => {
     
     console.log('Sending request...');
 
-  // animacja
-
-  document.getElementById("analyze").addEventListener("click", function() {
-    // Schowaj przycisk "analyze"
+     // Schowaj przycisk "analyze"
     document.getElementById("analyze").style.display = "none";
     
     // Pokaż element "preloader"
-    document.getElementById("preloader").style.display = "block";
-    document.getElementById("preloader").style.position = "relative";
-    document.getElementById("preloader").style.visibility = "visible";
-});
+    var preloader = document.getElementById("preloader");
+    preloader.style.display = "block";
+    preloader.style.position = "relative";
+    preloader.style.visibility = "visible";
+    
+    // Zmiana marginesu
+    document.querySelector(".loading-circle").style.marginTop = "7%";
+    document.querySelector(".loading-circle").style.opacity = "100%";
+  
+
     // tu sie zaczyna wysylanie requesta, tu powinny byc jakies animacje jak chcecie czy cos
 
     fetch('http://localhost:5000/chatgpt', {
