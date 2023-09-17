@@ -267,8 +267,8 @@
         /* ------------------------------------------------------------preloader---------------------------------------------------- */
 
         #preloader{
-            background: rgba(15, 27, 37) url('img/log.gif') no-repeat center center;
-            background-size: 20%;
+            background: rgba(15, 27, 37) url('img/wait.gif') no-repeat center center;
+            background-size: 10%;
             height: 55px;
             width: auto;
             position: relative;
