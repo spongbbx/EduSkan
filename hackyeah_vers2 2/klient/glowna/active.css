@@ -371,29 +371,38 @@
         }
 
         .cele {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
         }
 
-        .goals-check{
-            display: block;
-            margin-left: 2%;
-            flex-basis: 10%;
+        .goal{
+            display: flex;
         }
 
-        .goals{
-            flex-basis: 70%;
+        .text-goal{
+            display: block;
+        }
+
+        .text-goal h3{
+            margin-left: 5%;
+            margin-bottom: 0.5%;
+            font-size: 28px;
+        }
+
+        .text-goal p{
+            margin-left: 5%;
+            margin-bottom: 3%;
+            font-size: 20px;
         }
         
         .cel {
-            position: relative;
             display: block;
             width: max-content;
-            margin: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 4%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .icons8-ok {
