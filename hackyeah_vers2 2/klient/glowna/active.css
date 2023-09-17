@@ -264,6 +264,18 @@
         .button:hover {
             background-color: rgb(15, 38, 59);
         }
+        /* ------------------------------------------------------------preloader---------------------------------------------------- */
+
+        #preloader{
+            background: rgba(15, 27, 37) url('img/log.gif') no-repeat center center;
+            background-size: 20%;
+            height: 55px;
+            width: auto;
+            position: relative;
+            z-index: 100;
+            border-radius: 15px;
+        }
+
         /* ------------------------------------------------------------o projekcie---------------------------------------------------- */
         
         #oprojekcie {
