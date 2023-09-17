@@ -30,21 +30,14 @@
             position: fixed;
             background-color: rgba(15, 27, 37);
             width: 100%;
-            padding: 2vh;
+            padding: 2%;
             z-index: 2;
             height: 70px;
-            transition: box-shadow 0.3s ease;
         }
         
         .logo {
             margin-left: 2%;
-        }
-        
-        .shadow {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            /* Add shadow when scrolled 50px */
-            transition: box-shadow 0.3s ease;
-            /* Add smooth transition */
+            z-index: 4;
         }
         
         .sidemenu {
@@ -97,6 +90,7 @@
             margin: 0 auto;
             margin-top: 8%;
             margin-right: 8%;
+            border: solid 2px black;
         }
         /* -----------------------------------Autorzy----------------------------------- */
         
@@ -137,6 +131,7 @@
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            border: solid 2px black;
         }
         
         .author-text {
@@ -510,9 +505,8 @@
             }
             .col-2 {
                 flex-basis: 100%;
-                margin-right: 15%;
-                margin-left: 15%;
-                width: 100%;
+                margin: 5% auto;
+                max-width: 50%;
                 height: 100%;
             }
             .form {
@@ -552,8 +546,20 @@
         
         @media (max-width: 830px) {
             .sidemenu {
+                background-color: rgba(15, 27, 37);
+                margin: 0 auto;
+                position: absolute;
+                padding: 5% 0 3% 0;
+                margin-top: -25.5px;
                 display: none;
+                right: 0;
+                width: 100%;
+                justify-content: space-between;
                 /* Hide the menu by default on smaller screens */
+            }
+            .sidemenu li {
+                width: fit-content;
+                padding: 0 5%;
             }
             .hamburger {
                 display: block;
@@ -561,12 +567,8 @@
             }
             /* Show the menu when the hamburger is clicked */
             .active {
-                display: block !important;
-                position: absolute;
-            }
-            .logo {
-                padding-left: 0;
-                margin: 0 auto;
+                top: 76.5px;
+                display: flex !important;
             }
             .sub-title {
                 width: max-content;
@@ -592,6 +594,10 @@
             .socials svg {
                 height: 30px;
             }
+            .col-2 {
+                margin: 5% auto;
+                max-width: 70%;
+            }
         }
         
         @media only screen and (max-width: 650px) {
@@ -606,9 +612,8 @@
             .col-2 {
                 flex-basis: 100%;
                 /* Ustaw pełną szerokość na małych ekranach */
-                margin-right: 6%;
-                margin-left: 6%;
-                margin-top: 5%;
+                margin: 5% auto;
+                max-width: 80%;
                 /* Zmniejsz margines górnego */
             }
             .formularz {
