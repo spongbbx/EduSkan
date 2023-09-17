@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.loader-wrapper {
+    position: relative;
+}
+
+.loader {
+    border: 4px dotted #3498db;
+    border-top: 4px solid #f0f0f0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite, blink 1s alternate infinite;
+    animation-delay: 0.8s, 1.3s; /* Opóźnienie dla animacji blink */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
