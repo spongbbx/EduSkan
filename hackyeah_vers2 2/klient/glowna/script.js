@@ -31,6 +31,8 @@ analyze_button.addEventListener('click', (e) => {
     
     // Pokaż element "preloader"
     document.getElementById("preloader").style.display = "block";
+    document.getElementById("preloader").style.position = "relative";
+    document.getElementById("preloader").style.visibility = "visible";
 });
     // tu sie zaczyna wysylanie requesta, tu powinny byc jakies animacje jak chcecie czy cos
 

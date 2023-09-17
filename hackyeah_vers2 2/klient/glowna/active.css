@@ -266,16 +266,40 @@
         }
         /* ------------------------------------------------------------preloader---------------------------------------------------- */
 
-        #preloader{
-            background: rgba(15, 27, 37) url('img/wait.gif') no-repeat center center;
-            background-size: 10%;
-            height: 55px;
-            width: auto;
-            position: relative;
-            z-index: 100;
-            border-radius: 15px;
-            display: none;
-        }
+                /* Ukryj .loading-container i .loading-circle domyślnie, ale zachowaj miejsce */
+                .loading-container
+                 {
+                    display: none;
+                    position: absolute;
+                    visibility: hidden;
+                }
+
+                .loading-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                }
+                /* Define the styles for the loading circle */
+                
+                .loading-circle {
+                    width: 70px;
+                    height: 70px;
+                    border: 10px solid transparent;
+                    border-top: 10px double #0f1b25;
+                    border-radius: 50%;
+                    animation: spin 1.2s linear infinite;
+                }
+                /* Define the animation for spinning */
+                
+                @keyframes spin {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
 
         /* ------------------------------------------------------------o projekcie---------------------------------------------------- */
         
