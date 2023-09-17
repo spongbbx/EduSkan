@@ -24,6 +24,14 @@ analyze_button.addEventListener('click', (e) => {
     console.log('Sending request...');
 
   // animacja
+
+  document.getElementById("analyze").addEventListener("click", function() {
+    // Schowaj przycisk "analyze"
+    document.getElementById("analyze").style.display = "none";
+    
+    // Pokaż element "preloader"
+    document.getElementById("preloader").style.display = "block";
+});
     // tu sie zaczyna wysylanie requesta, tu powinny byc jakies animacje jak chcecie czy cos
 
     fetch('http://localhost:5000/chatgpt', {
@@ -142,3 +150,4 @@ window.addEventListener('load', handleScroll);
 
 // Manually trigger the scroll event on page load to check initial state
 window.dispatchEvent(new Event('scroll'));
+
