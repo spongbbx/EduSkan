@@ -72,7 +72,7 @@ analyze_button.addEventListener('click', (e) => {
 const authorElements = document.querySelectorAll('.author');
 const oCol1Elements = document.querySelectorAll('.o-col-1');
 const oCol2Elements = document.querySelectorAll('.o-col-2');
-const rowceleElements = document.querySelectorAll('.cele');
+const rowceleElements = document.querySelectorAll('.rowcele');
 
 let animationTriggered = false; // Flag to track if the animation has been triggered
 
