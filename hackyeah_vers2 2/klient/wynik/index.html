@@ -10,36 +10,48 @@
         <script src="https://kit.fontawesome.com/77165ab45f.js" crossorigin="anonymous"></script>
     </head>
     <body>
+    <!-- --------------------------------------main----------------------------------- -->
 
-<!-- --------------------------------------main----------------------------------- -->
+    <div id="main">
 
-        <div id="main">
-            <div class="kontener">
-    <!-- ----------------------------menu i logo-------------------------- -->
-                <div class="menu">
-                    <h1 class="logo">Przyszłość</h1>
-                    <nav>
-                        <ul class="sidemenu">
-                            <li><a href="../glowna/index.html">Strona Główna</a></li>
-                            <li><a href="#">O projekcie</a></li>
-                            <li><a href="#">Autorzy</a></li>
-                            <li><a href="#">Cele</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    <!-- --------------------------kolumny------------------------------ -->
+        <div class="kontener">
+            <!-- ----------------------------menu i logo-------------------------- -->
+            <div class="menu" id="menu">
+                <div class="overlay"></div>
+                <h1 class="logo">EduSkan</h1>
+                <nav>
+                    <ul class="sidemenu" id="sidemenu">
+                        <li><a href="../glowna/index.html">Analiza</a></li>
+                        <li><a href="../glowna/index.html#oprojekcie">O projekcie</a></li>
+                        <li><a href="../glowna/index.html#autorzy">Autorzy</a></li>
+                        <li><a href="../glowna/index.html#cele">Cele</a></li>
+                    </ul>
+                    <!-- Hamburger icon -->
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="bar"></div> 
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </nav>
 
-                        <div id="wynik">
-                            <h1 id="nazwazawod" class="nazwazawod">
-                                Informatyk
-                            </h1>
-                            <p id="opiszawod" class="opiszawod">
-                                Informatyk jest odpowiedzialny za projektowanie, rozwijanie i utrzymywanie oprogramowania oraz systemów informatycznych. Ten zawód obejmuje tworzenie nowych aplikacji, analizę i rozwiązywanie problemów związanych z istniejącymi systemami oraz optymalizację procesów informatycznych. Informatycy pracują w różnych dziedzinach, w tym w firmach technologicznych, finansowych, zdrowotnych, edukacyjnych i wielu innych. Ich zadania mogą obejmować programowanie, testowanie, zarządzanie projektami, analizę danych, zabezpieczanie sieci oraz wsparcie techniczne. Informatycy muszą być bieżący w zakresie nowych technologii i trendów w dziedzinie informatyki. Zawód informatyka wymaga umiejętności logicznego myślenia, rozwiązywania problemów i kreatywnego podejścia do projektowania. Informatycy często pracują w zespołach projektowych, współpracując z innymi specjalistami, takimi jak projektanci, inżynierowie oprogramowania i administratorzy sieci. Zawód ten jest stale rozwijający się, co wymaga ciągłego dokształcania się i aktualizowania wiedzy. Informatycy mogą specjalizować się w różnych dziedzinach, takich jak programowanie aplikacji mobilnych, analiza danych, sztuczna inteligencja, cyberbezpieczeństwo i wiele innych. Praca informatyka może być satysfakcjonująca ze względu na możliwość tworzenia innowacyjnych rozwiązań technologicznych i wpływ na rozwój społeczeństwa poprzez ułatwianie dostępu do informacji i usług online.
-                            </p>
-                        </div>
+
+            </div>
+            <!-- --------------------------kolumny------------------------------ -->
+            <div class="col">
+                <!-- ------------tekst----------- -->
+                <div class="col-1">
+                    <div class="teks">
+                        <br>
+                        <h1>Czyżbyś błądził?<br> My pomożemy!</h1> <br>
+                        <p class="tekstp">Z naszym bardzo nowoczesnym systemem już nie musisz się martwić co począć dalej! Wystarczy, że podasz nam kilka informacji, a zmienimy Twoje życie w mgnieniu oka!</p>
                     </div>
                 </div>
+                <!-- -----------ankieta--------- -->
+                <div class="col-2" id="wynik">
+                    <h1 id="zawod"></h1>
+                    <p id="opis-zawod"></p>
+                </div>
             </div>
-        </div>
+            <script src="script.js"></script>
     </body>
 </html>
