@@ -26,6 +26,7 @@ app.post('/chatgpt', (req, res) => {
     
     child = exec(cmd, (err, stdout, stderr) => {
         console.log(stdout);
+        console.log(stderr);
         res.send({answer: stdout, err: err});
     })
 })
