@@ -22,7 +22,7 @@ body {
     color: #fff;
 }
 
-/* -------------------------------------------main----------------------------------- */
+/* -------------------------------------------menu i glow----------------------------------- */
 
 .kontener {
     width: 100%;
@@ -74,33 +74,6 @@ body {
     color: white;
 }
 
-
-/* -----------------------------------------kolumny---------------------------------------- */
-
-.col {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.col-1 {
-    flex-basis: 46%;
-    margin-left: 8%;
-    margin-top: 8%;
-    height: 40vh;
-}
-
-.col-2 {
-    flex-basis: 500px;
-    background-color: #fffffff8;
-    border-radius: 15px;
-    margin: 0 auto;
-    margin-top: 8%;
-    margin-right: 8%;
-    border: solid 2px black;
-}
-
-
 .hamburger {
     display: none;
     /* Initially hide the hamburger icon */
@@ -123,23 +96,13 @@ body {
     transition: 0.4s;
 }
 
-.col-1 {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    animation: appear 0.8s ease-in-out forwards;
-}
+/* -------------------------------------------szkoły----------------------------------- */
 
-.col-2 {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    animation: appear 0.8s ease-in-out forwards;
-    animation-delay: 0.5s;
-}
-
-.a-left-col .sub-title {
-    padding-bottom: 70px;
+.szkoly{
+    margin: 1% 4%;
+    background-color: #fff;
+    width: 100px;
+    height: 100%;
 }
 
 /* ---------------------------------- do animacji------------------- */
@@ -152,5 +115,77 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+/* ---------------------------------------------------------------------dla małych ekranów----------------------------------------------- */
+
+nav .fa-solid {
+    display: none;
+}
+/* Media query for screens 830px or less */
+
+@media (max-width: 830px) {
+    .sidemenu {
+        display: flex !important;
+        flex-direction: column;
+        text-align: right;
+        background-color: rgba(15, 27, 37);
+        margin: 0 auto;
+        position: absolute;
+        padding: 5% 2% 3% 2%;
+        margin-top: -25.5px;
+        display: none;
+        right: -35%;
+        width: 25%;
+        height: 100vh;
+        /* Hide the menu by default on smaller screens */
+        justify-content: center;
+        transition: right 0.3s ease-out;
+        z-index: 20;
+    }
+    /* Add this CSS for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Adjust the alpha value for darkness */
+        z-index: 10;
+        /* Ensure it's above other content */
+    }
+    /* Add this CSS to show the overlay when .sidemenu.active is present */
+    .sidemenu li {
+        width: auto;
+        padding: 5% 5%;
+    }
+    .sidemenu li a {
+        margin: 0 auto;
+        font-size: 25px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: block;
+        z-index: 25;
+        /* Display the hamburger icon on smaller screens */
+    }
+    /* Show the menu when the hamburger is clicked */
+    .active {
+        right: 0;
+        opacity: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .kontener {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 0 0px;
     }
 }
