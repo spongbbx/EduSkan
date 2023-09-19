@@ -101,12 +101,43 @@ body {
     height: fit-content;
 }
 
+.pierwszy,
+.drugi {
+    position: absolute;
+    margin-top: 5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.trzeci {
+    margin: 0;
+    transform: rotateY(180deg);
+}
+
+.pierwszy svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.drugi svg {
+    position: relative;
+    display: block;
+    width: 170%;
+    height: 100px;
+    fill: rgb(247, 248, 248);
+    transform: rotateY(180deg);
+}
+
 
 /* -----------------------------------Autorzy----------------------------------- */
 
 #autorzy {
     background-color: rgba(15, 27, 37);
-    padding: 80px 0;
+    padding: 200px 0 160px 0;
     color: white;
     border: none;
     width: 100%;
@@ -347,6 +378,7 @@ textarea::placeholder {
 #oprojekcie {
     background-color: #fffffff8;
     margin-top: 5%;
+    padding-top: 10%;
     color: rgb(15, 27, 37);
     border: none;
 }
@@ -355,6 +387,8 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: fit-content;
+    margin-bottom: 5%;
 }
 
 .o-col-1 {
@@ -468,6 +502,7 @@ textarea::placeholder {
 #cele {
     width: 100vw;
     margin: 3% 0;
+    padding-top: 160px;
 }
 
 .cel {
@@ -706,6 +741,10 @@ nav .fa-solid {
     .socials svg {
         height: 35px;
     }
+    .pierwszy svg,
+    .drugi svg {
+        height: 80px;
+    }
 }
 
 
@@ -780,8 +819,9 @@ nav .fa-solid {
     .o-col-2 {
         padding-top: 7%;
     }
-    #autorzy {
-        padding-top: 7%;
+    #autorzy,
+    #cele {
+        padding-top: 130px;
     }
     .a-left-col .sub-title {
         padding-bottom: 0;
@@ -796,6 +836,19 @@ nav .fa-solid {
     .tekstp {
         text-align: justify;
         text-align-last: center;
+    }
+    .pierwszy svg,
+    .drugi svg {
+        height: 70px;
+    }
+    .pierwszy svg {
+        width: 140%;
+    }
+    .drugi svg {
+        width: 180%;
+    }
+    #autorzy {
+        padding-bottom: 100px;
     }
 }
 
@@ -862,8 +915,20 @@ nav .fa-solid {
     .sidemenu li a {
         font-size: 20px;
     }
-    .linia {
-        top: 60px
+    #autorzy,
+    #cele {
+        padding-top: 120px;
+        ;
+    }
+    .pierwszy svg,
+    .drugi svg {
+        height: 60px;
+    }
+    .pierwszy svg {
+        width: 160%;
+    }
+    .drugi svg {
+        width: 230%;
     }
 }
 
