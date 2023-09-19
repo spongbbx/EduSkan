@@ -88,7 +88,7 @@ body {
     flex-basis: 46%;
     margin-left: 8%;
     margin-top: 8%;
-    height: 40vh;
+    height: fit-content;
 }
 
 .col-2 {
@@ -98,6 +98,7 @@ body {
     margin: 0 auto;
     margin-top: 8%;
     margin-right: 8%;
+    height: fit-content;
 }
 
 
@@ -394,7 +395,7 @@ textarea::placeholder {
 }
 
 .wramach {
-    margin: 0 auto;
+    margin: 10% auto 0 auto;
     width: 50%;
     text-align: center;
 }
