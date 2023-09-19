@@ -286,6 +286,7 @@ textarea::placeholder {
     width: 100%;
     border-radius: 15px;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -490,19 +491,73 @@ textarea::placeholder {
 .rowcele {
     width: 80%;
     margin: 0 auto;
+    font-size: 50px;
 }
 
-.cel svg {
-    width: 35px;
-    height: 35px;
+.list-ic li {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 1.5% 0 0;
+    justify-content: left;
 }
 
-.good {
-    fill: green;
+.list-ic li span {
+    display: inline-block;
+    font-weight: 800;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: #18bc9c;
+    color: white;
+    position: relative;
+}
+
+.list-ic li::before {
+    content: '';
+    position: absolute;
+    background: #18bc9c;
+    z-index: -1;
+}
+
+.list-ic.vertical {
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.list-ic.vertical li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.list-ic.vertical li span {
+    margin: 1.4em 0;
+}
+
+.list-ic.vertical li::before {
+    top: -100px;
+    left: 45px;
+    width: 0.2em;
+    height: 4em;
+}
+
+.list-ic li:first-child::before {
+    display: none;
+}
+
+.cel {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.cel h2 {
+    font-size: 50px;
+}
+
+.cel p {
+    font-size: 30px;
 }
 
 
@@ -794,4 +849,9 @@ nav .fa-solid {
     .sidemenu li a {
         font-size: 20px;
     }
+    .linia {
+        top: 60px
+    }
 }
+
+@media (min-width: 2560px) {}

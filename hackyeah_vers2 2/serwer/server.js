@@ -3,7 +3,7 @@ const cors = require('cors');
 const { spawn, exec } = require('child_process')
 
 const app = express();
-const port = 5000;
+const port = 2137;
 
 app.use(cors())
 app.use(express.json())
@@ -14,15 +14,16 @@ app.post('/chatgpt', (req, res) => {
 
     const {education_status, future_plans, hobby, about_me} = req.body;
 
-    const query = `Aktualny status edukacyjny: ${education_status}. Czym chcesz się zajmować w przyszłości: ${future_plans}. Czy masz jakieś ulubione hobby lub zainteresowania pozanaukowe: ${hobby}. Opisz siebie jak najdokładniej możesz, opowiedz nam o czym zechcesz - im więcej napiszesz, tym dokładniej dobierzemy Ci kierunek: ${about_me}.`;
+    const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. Odpowiadaj jedynie poprzez nazwę szkół, (teraz wpisz /),  kierunkiem, który mam wybrać i maksymalnie 20-wyrazowym wytłumaczeniem wyboru. Mój profil jest taki: W przyszłości chcę się zajmować: ${future_plans}. Hobby: ${hobby}. Moje oceny: ${education_status}. Dodatkowe informacje: ${about_me}. Pamiętaj, żeby zwracać się na ty`;
 
     console.log('running python');
+    console.log(query);
 
     let cmd = "";
     if (process.platform === "win32") { 
         cmd += "cmd /c chcp 65001>nul && "; 
     };
-    cmd += `py chatgpt.py "${query}"`
+    cmd += `python3 chatgpt.py "${query}"`
     
     child = exec(cmd, (err, stdout, stderr) => {
         console.log(stdout);

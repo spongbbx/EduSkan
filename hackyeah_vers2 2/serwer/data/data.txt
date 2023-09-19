@@ -1,3 +1,5 @@
+Lista szkół:
+
 Akademickie Liceum Innowacji
 Ocena 1-10: 9, 8, 9, 7, 8, 6, 7, 9, 8, 10
 Kierunki: Matematyka zaawansowana, fizyka kwantowa, programowanie
@@ -118,7 +120,10 @@ Kierunki: mechanika lotnicza, nawigacja, zarządzanie lotnictwem
 Koła: modelarstwo lotnicze, astronomia, symulatory lotów
 Zalety: współpraca z lotniskami, praktyki w linii lotniczych
 
-Jest to spis 20 różnych szkół ocenionych w tych samych kategoriach. Liczby w ocenie odpowiadają kolejno: 
+
+
+Zasady oceniania:
+
  1. Akademicka Jakość:
         Średnia wyników uczniów na egzaminach końcowych.
         Dostępność zaawansowanych kursów i przedmiotów.
@@ -167,4 +172,5 @@ Jest to spis 20 różnych szkół ocenionych w tych samych kategoriach. Liczby w
         Procent uczniów, którzy kontynuują naukę na uczelniach.
         Opinie pracodawców na temat absolwentów.
 
-Podam ci profil ucznia i dopasuj go do jednej ze szkół, która najlepiej do niego pasuje. W odpowiedzi podaj nazwę szkoły i krótko opisz powód, dla których ją wybrałeś.
+
+
