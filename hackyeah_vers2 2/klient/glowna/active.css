@@ -111,6 +111,11 @@ body {
     line-height: 0;
 }
 
+.drugi {
+    transform: rotate(180deg);
+    background-color: rgb(247, 248, 248);
+}
+
 .trzeci {
     margin: 0;
     transform: rotateY(180deg);
@@ -128,7 +133,7 @@ body {
     display: block;
     width: 170%;
     height: 100px;
-    fill: rgb(247, 248, 248);
+    fill: rgb(15, 27, 37);
     transform: rotateY(180deg);
 }
 
@@ -377,8 +382,7 @@ textarea::placeholder {
 
 #oprojekcie {
     background-color: #fffffff8;
-    margin-top: 5%;
-    padding-top: 10%;
+    padding-top: 5%;
     color: rgb(15, 27, 37);
     border: none;
 }
@@ -388,7 +392,6 @@ textarea::placeholder {
     justify-content: space-between;
     flex-wrap: wrap;
     height: fit-content;
-    margin-bottom: 5%;
 }
 
 .o-col-1 {
