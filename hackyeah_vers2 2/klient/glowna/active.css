@@ -28,6 +28,7 @@ body {
 .kontener {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .menu {
@@ -111,13 +112,16 @@ body {
     line-height: 0;
 }
 
+.pierwszy {
+    margin-top: calc(5% - 1px);
+}
+
 .drugi {
-    transform: rotate(180deg);
-    background-color: rgb(247, 248, 248);
+    transform: rotate(180deg) translateY(-21%);
 }
 
 .trzeci {
-    margin: 0;
+    margin: -1px 0 0 0;
     transform: rotateY(180deg);
 }
 
@@ -142,7 +146,8 @@ body {
 
 #autorzy {
     background-color: rgba(15, 27, 37);
-    padding: 200px 0 160px 0;
+    padding: 30px 0 160px 0;
+    margin-top: 120px;
     color: white;
     border: none;
     width: 100%;
@@ -381,10 +386,10 @@ textarea::placeholder {
 /* ------------------------------------------------------------o projekcie---------------------------------------------------- */
 
 #oprojekcie {
-    background-color: #fffffff8;
     padding-top: 5%;
     color: rgb(15, 27, 37);
     border: none;
+    background: linear-gradient(0deg, rgba(184, 34, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .row {
@@ -748,6 +753,12 @@ nav .fa-solid {
     .drugi svg {
         height: 80px;
     }
+    .drugi {
+        transform: rotate(180deg) translateY(-52%);
+    }
+    .layerstopka {
+        margin-top: 20px;
+    }
 }
 
 
@@ -822,7 +833,6 @@ nav .fa-solid {
     .o-col-2 {
         padding-top: 7%;
     }
-    #autorzy,
     #cele {
         padding-top: 130px;
     }
@@ -852,6 +862,9 @@ nav .fa-solid {
     }
     #autorzy {
         padding-bottom: 100px;
+    }
+    .drugi {
+        transform: rotate(180deg) translateY(-75%);
     }
 }
 
@@ -918,7 +931,6 @@ nav .fa-solid {
     .sidemenu li a {
         font-size: 20px;
     }
-    #autorzy,
     #cele {
         padding-top: 120px;
         ;
@@ -932,6 +944,9 @@ nav .fa-solid {
     }
     .drugi svg {
         width: 230%;
+    }
+    .drugi {
+        transform: rotate(180deg) translateY(-101%);
     }
 }
 
