@@ -522,6 +522,17 @@ textarea::placeholder {
     z-index: -1;
 }
 
+.list-ic .no::before {
+    content: '';
+    position: absolute;
+    background: gray;
+    z-index: -1;
+}
+
+.list-ic .no span {
+    background: gray;
+}
+
 .list-ic.vertical {
     padding: 0;
     margin: 0 auto;
