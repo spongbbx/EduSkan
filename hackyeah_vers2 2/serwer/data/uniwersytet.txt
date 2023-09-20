@@ -1,0 +1,59 @@
+1. Uniwersytet Technologiczny TechU:
+    Kierunki kształcenia: Informatyka, Elektronika, Inżynieria oprogramowania
+    Wydziały: Wydział Informatyki, Wydział Elektroniki, Wydział Inżynierii Oprogramowania
+    Szczególne zalety: Zaawansowane laboratoria techniczne, liczba profesorów z tytułami naukowymi, sukcesy w konkursach informatycznych.
+    Ocena: 9, 8, 9, 8, 9, 8, 8, 7, 7, 9
+
+2. Uniwersytet Sztuki i Kultury ArtUni:
+    Kierunki kształcenia: Sztuki plastyczne, Muzyka, Teatr
+    Wydziały: Wydział Sztuk Plastycznych, Wydział Muzyki, Wydział Teatru
+    Szczególne zalety: Kreatywna atmosfera, renomowani profesorowie artystycy, wystawy i spektakle.
+    Ocena: 8, 9, 9, 9, 9, 8, 7, 6, 5, 8
+
+3. Uniwersytet Medyczny HealthUni:
+    Kierunki kształcenia: Medycyna, Psychologia, Biologia
+    Wydziały: Wydział Medycyny, Wydział Psychologii, Wydział Biologii
+    Szczególne zalety: Wysoki poziom bezpieczeństwa, wsparcie psychologiczne, praktyki w szpitalach.
+    Ocena: 9, 8, 8, 7, 9, 9, 8, 8, 7, 9
+
+4. Uniwersytet Humanistyczny HumanUni:
+    Kierunki kształcenia: Historia, Literatura, Filozofia
+    Wydziały: Wydział Historii, Wydział Literatury, Wydział Filozofii
+    Szczególne zalety: Bogaty program humanistyczny, znani profesorowie, konkursy z historii i literatury.
+    Ocena: 8, 8, 8, 7, 8, 8, 8, 6, 5, 7
+
+5. Uniwersytet Sportu i Rekreacji SportUni:
+    Kierunki kształcenia: Wychowanie fizyczne, Sporty drużynowe, Dietetyka
+    Wydziały: Wydział Wychowania Fizycznego, Wydział Sportów Drużynowych, Wydział Dietetyki
+    Szczególne zalety: Doskonałe zaplecze sportowe, programy stypendialne dla utalentowanych sportowców, sukcesy sportowe.
+    Ocena: 9, 9, 9, 9, 9, 8, 8, 7, 8, 9
+
+6. Uniwersytet Ekologiczny EcoUni:
+    Kierunki kształcenia: Ochrona środowiska, Ekologia, Energetyka
+    Wydziały: Wydział Ochrony Środowiska, Wydział Ekologii, Wydział Energetyki
+    Szczególne zalety: Aktywne zaangażowanie w ochronę środowiska, programy edukacyjne dotyczące zrównoważonego rozwoju, sukcesy w konkursach ekologicznych.
+    Ocena: 9, 8, 8, 8, 9, 9, 8, 7, 7, 8
+
+7. Uniwersytet Biznesu BusinessUni:
+    Kierunki kształcenia: Ekonomia, Zarządzanie, Przedsiębiorczość
+    Wydziały: Wydział Ekonomii, Wydział Zarządzania, Wydział Przedsiębiorczości
+    Szczególne zalety: Kursy z zakresu ekonomii i zarządzania, współpraca z lokalnymi firmami, sukcesy absolwentów w biznesie.
+    Ocena: 8, 9, 9, 7, 8, 8, 8, 7, 7, 9
+
+8. Uniwersytet Lingwistyczny LinguaUni:
+    Kierunki kształcenia: Lingwistyka, Tłumaczenia, Kulturoznawstwo
+    Wydziały: Wydział Lingwistyki, Wydział Tłumaczeń, Wydział Kulturoznawstwa
+    Szczególne zalety: Bogata oferta językowa, międzynarodowa atmosfera, programy stypendialne dla kursów za granicą.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 7, 9
+
+9. Uniwersytet Inżynieryjny EngineeringUni:
+    Kierunki kształcenia: Inżynieria, Elektrotechnika, Mechanika
+    Wydziały: Wydział Inżynierii, Wydział Elektrotechniki, Wydział Mechaniki
+    Szczególne zalety: Zaawansowane laboratoria, inwestycje w nowoczesne technologie, sukcesy w konkursach inżynieryjnych.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 7, 9
+
+10. Uniwersytet Kulinarnej Sztuki CulinaryUni:
+    Kierunki kształcenia: Gastronomia, Szef kuchni, Obsługa restauracji
+    Wydziały: Wydział Gastronomii, Wydział Szefa Kuchni, Wydział Obsługi Restauracji
+    Szczególne zalety: Doskonałe zaplecze kulinarno-gastronomiczne, praktyki w renomowanych restauracjach, sukcesy w konkursach kulinarnych.
+    Ocena: 9, 9, 9, 8, 9, 8, 7, 7, 7, 9

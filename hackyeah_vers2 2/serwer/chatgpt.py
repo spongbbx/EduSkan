@@ -19,15 +19,17 @@ os.environ["OPENAI_API_KEY"] = constants.APIKEY
 PERSIST = False
 
 query = None
-if len(sys.argv) > 1:
-  query = sys.argv[1]
+school = None
+if len(sys.argv) > 2:
+  query = sys.argv[2]
+  school = sys.argv[1]
 
 if PERSIST and os.path.exists("persist"):
   print("Reusing index...\n")
   vectorstore = Chroma(persist_directory="persist", embedding_function=OpenAIEmbeddings())
   index = VectorStoreIndexWrapper(vectorstore=vectorstore)
 else:
-  loader = TextLoader("data/data.txt") # Use this line if you only need data.txt
+  loader = TextLoader(f"data/{school}.txt") # Use this line if you only need data.txt
   #loader = DirectoryLoader("data/")
   if PERSIST:
     index = VectorstoreIndexCreator(vectorstore_kwargs={"persist_directory":"persist"}).from_loaders([loader])
@@ -46,7 +48,7 @@ while True:
   if query in ['quit', 'q', 'exit']:
     sys.exit()
   result = chain({"question": query, "chat_history": chat_history})
-  print(sys.stdout.buffer.write(result['answer'].encode('utf8')))
+  sys.stdout.buffer.write(result['answer'].encode('utf-8'))
 
   chat_history.append((query, result['answer']))
   query = None

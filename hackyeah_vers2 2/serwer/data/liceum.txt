@@ -1,0 +1,50 @@
+1. Liceum Elite Education:
+        Kierunki kształcenia: Matematyka, Informatyka, Fizyka
+        Koła zainteresowań: Klub programistyczny, Koło fizyczne
+        Szczególne zalety: Wybitna akademicka jakość, liczba nauczycieli z tytułami naukowymi, program rozszerzony z matematyki i informatyki.
+        Ocena: 9, 8, 9, 7, 9, 8, 7, 6, 5, 8
+2. Liceum Artystyczne Inspire:
+        Kierunki kształcenia: Sztuki plastyczne, Muzyka, Teatr
+        Koła zainteresowań: Teatralna grupa artystyczna, Klub artystyczny
+        Szczególne zalety: Kreatywna atmosfera, doskonałe programy artystyczne, nowoczesne zaplecze artystyczne.
+        Ocena: 7, 8, 9, 9, 9, 8, 7, 6, 4, 8
+3. Liceum Medyczne Healthy Minds:
+        Kierunki kształcenia: Medycyna, Psychologia, Biologia
+        Koła zainteresowań: Klub medyczny, Badania psychologiczne
+        Szczególne zalety: Wysoki poziom bezpieczeństwa, wsparcie psychologiczne, praktyki w szpitalach.
+        Ocena: 8, 7, 8, 7, 9, 9, 8, 7, 6, 8
+4. Liceum Techniczne Future Innovators:
+        Kierunki kształcenia: Informatyka, Elektronika, Robotyka
+        Koła zainteresowań: Klub robotyczny, Projektowanie elektroniczne
+        Szczególne zalety: Zaawansowane laboratoria techniczne, inwestycje w nowoczesne technologie, sukcesy uczniów w konkursach informatycznych.
+        Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 6, 9
+5. Liceum Humanistyczne Renaissance:
+        Kierunki kształcenia: Historia, Literatura, Filozofia
+        Koła zainteresowań: Klub historyczny, Dyskusyjny kółko literackie
+        Szczególne zalety: Bogaty program humanistyczny, innowacyjne podejście do nauki historii i literatury.
+        Ocena: 8, 8, 8, 7, 8, 8, 8, 6, 5, 7
+6. Liceum Sportowe Athletic Excellence:
+        Kierunki kształcenia: Wychowanie fizyczne, Sporty drużynowe, Dietetyka
+        Koła zainteresowań: Klub sportowy, Klub zdrowego stylu życia
+        Szczególne zalety: Doskonałe zaplecze sportowe, programy stypendialne dla utalentowanych sportowców.
+        Ocena: 7, 9, 7, 9, 8, 9, 8, 7, 8, 7
+7. Liceum Ekologiczne Green Horizon:
+        Kierunki kształcenia: Ochrona środowiska, Biologia, Ekonomia ekologiczna
+        Koła zainteresowań: Ekologiczne działania społeczne, Badania nad zmianami klimatycznymi
+        Szczególne zalety: Aktywne zaangażowanie w ochronę środowiska, programy edukacyjne dotyczące zrównoważonego rozwoju.
+        Ocena: 8, 7, 8, 8, 9, 9, 8, 7, 6, 7
+8. Liceum Biznesu Future Entrepreneurs:
+        Kierunki kształcenia: Ekonomia, Zarządzanie, Przedsiębiorczość
+        Koła zainteresowań: Klub przedsiębiorców, Symulacje biznesowe
+        Szczególne zalety: Kursy z zakresu ekonomii i zarządzania, współpraca z lokalnymi firmami.
+        Ocena: 8, 8, 9, 7, 8, 7, 8, 6, 8, 8
+9. Liceum Języków Obcych Global Connections:
+        Kierunki kształcenia: Lingwistyka, Tłumaczenia, Kulturoznawstwo
+        Koła zainteresowań: Klub językowy, Międzynarodowa wymiana uczniów
+        Szczególne zalety: Bogata oferta językowa, międzynarodowa atmosfera, programy stypendialne dla kursów za granicą.
+        Ocena: 8, 8, 9, 7, 8, 7, 9, 6, 7, 8
+10. Liceum Innowacji Technologicznych Tech Wizards:
+        Kierunki kształcenia: Inżynieria, Cyberbezpieczeństwo, Technologia informacyjna
+        Koła zainteresowań: Klub hakerów etycznych, Projekty inżynierskie
+        Szczególne zalety: Zaawansowane laboratoria, specjalizacja w dziedzinie cyberbezpieczeństwa, sukcesy w konkursach technologicznych.
+        Ocena: 9, 9, 9, 9, 9, 8, 7, 7, 6, 9

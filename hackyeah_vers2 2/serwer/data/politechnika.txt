@@ -1,0 +1,59 @@
+1. Politechnika Informatyczna TechPol:
+    Kierunki kształcenia: Informatyka, Cyberbezpieczeństwo, Sztuczna inteligencja
+    Wydziały: Wydział Informatyki, Wydział Cyberbezpieczeństwa, Wydział Sztucznej Inteligencji
+    Szczególne zalety: Zaawansowane laboratoria informatyczne, liczba profesorów z tytułami naukowymi, udział w międzynarodowych konkursach informatycznych.
+    Ocena: 9, 8, 9, 7, 9, 8, 7, 6, 5, 8
+
+2. Politechnika Artystyczna ArtTech:
+    Kierunki kształcenia: Sztuki wizualne, Muzyka, Teatr
+    Wydziały: Wydział Sztuk Wizualnych, Wydział Muzyki, Wydział Teatru
+    Szczególne zalety: Kreatywna atmosfera, nowoczesne pracownie artystyczne, wystawy i koncerty.
+    Ocena: 7, 8, 9, 9, 9, 8, 7, 6, 4, 8
+
+3. Politechnika Medyczna HealthTech:
+    Kierunki kształcenia: Medycyna, Psychologia medyczna, Biotechnologia
+    Wydziały: Wydział Medycyny, Wydział Psychologii Medycznej, Wydział Biotechnologii
+    Szczególne zalety: Wysoki standard opieki medycznej, badania naukowe z zakresu psychologii medycznej, praktyki w szpitalach.
+    Ocena: 8, 7, 8, 7, 9, 9, 8, 7, 6, 8
+
+4. Politechnika Techniczna TechInno:
+    Kierunki kształcenia: Informatyka, Elektronika, Robotyka
+    Wydziały: Wydział Informatyki, Wydział Elektroniki, Wydział Robotyki
+    Szczególne zalety: Zaawansowane laboratoria techniczne, inwestycje w nowoczesne technologie, projekty uczniów w dziedzinie robotyki.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 6, 9
+
+5. Politechnika Humanistyczna HumTech:
+    Kierunki kształcenia: Historia sztuki, Literatura, Filozofia
+    Wydziały: Wydział Historii Sztuki, Wydział Literatury, Wydział Filozofii
+    Szczególne zalety: Bogaty program humanistyczny, innowacyjne podejście do nauki humanistycznej, konferencje i seminaria.
+    Ocena: 8, 8, 8, 7, 8, 8, 8, 6, 5, 7
+
+6. Politechnika Sportu i Rekreacji SportTech:
+    Kierunki kształcenia: Fizjoterapia, Zarządzanie sportem, Dietetyka
+    Wydziały: Wydział Fizjoterapii, Wydział Zarządzania Sportem, Wydział Dietetyki
+    Szczególne zalety: Doskonałe zaplecze sportowe, programy stypendialne dla utalentowanych sportowców, praktyki w renomowanych klubach sportowych.
+    Ocena: 7, 9, 7, 9, 8, 9, 8, 7, 8, 7
+
+7. Politechnika Ekologiczna EcoTech:
+    Kierunki kształcenia: Ochrona środowiska, Biotechnologia, Energetyka ekologiczna
+    Wydziały: Wydział Ochrony Środowiska, Wydział Biotechnologii, Wydział Energetyki Ekologicznej
+    Szczególne zalety: Aktywne zaangażowanie w ochronę środowiska, badania nad ekologią, programy edukacyjne dotyczące zrównoważonego rozwoju.
+    Ocena: 8, 7, 8, 8, 9, 9, 8, 7, 6, 7
+
+8. Politechnika Biznesu BizTech:
+    Kierunki kształcenia: Ekonomia, Zarządzanie, Innowacje biznesowe
+    Wydziały: Wydział Ekonomii, Wydział Zarządzania, Wydział Innowacji Biznesowych
+    Szczególne zalety: Kursy z zakresu ekonomii i zarządzania, współpraca z lokalnymi firmami, innowacje w biznesie.
+    Ocena: 8, 8, 9, 7, 8, 7, 8, 6, 8, 8
+
+9. Politechnika Języków Obcych LangTech:
+    Kierunki kształcenia: Lingwistyka, Tłumaczenia, Kulturoznawstwo
+    Wydziały: Wydział Lingwistyki, Wydział Tłumaczeń, Wydział Kulturoznawstwa
+    Szczególne zalety: Bogata oferta językowa, międzynarodowa atmosfera, programy stypendialne dla kursów za granicą.
+    Ocena: 8, 8, 9, 7, 8, 7, 9, 6, 7, 8
+
+10. Politechnika Innowacji Technologicznych TechInnov:
+    Kierunki kształcenia: Inżynieria, Cyberbezpieczeństwo, Technologia informacyjna
+    Wydziały: Wydział Inżynierii, Wydział Cyberbezpieczeństwa, Wydział Technologii Informacyjnych
+    Szczególne zalety: Zaawansowane laboratoria technologiczne, specjalizacja w dziedzinie cyberbezpieczeństwa, innowacje w technologii.
+    Ocena: 9, 9, 9, 9, 9, 8, 7, 7, 6, 9

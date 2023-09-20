@@ -1,0 +1,59 @@
+1. Technikum TechnoTech:
+    Kierunki kształcenia: Informatyka, Elektronika, Automatyka
+    Koła zainteresowań: Klub programistyczny, Klub robotyczny
+    Szczególne zalety: Zaawansowane laboratoria techniczne, innowacyjne podejście do nauki informatyki, konkursy z robotyki.
+    Ocena: 9, 8, 9, 8, 9, 8, 8, 7, 7, 9
+
+2. Technikum Sztuki Kreatywnej Artistic Vision:
+    Kierunki kształcenia: Sztuki plastyczne, Fotografia, Projektowanie graficzne
+    Koła zainteresowań: Klub artystyczny, Grupa fotograficzna
+    Szczególne zalety: Pracownie artystyczne, doskonałe programy artystyczne, wystawy sztuki.
+    Ocena: 8, 9, 9, 9, 9, 8, 7, 6, 5, 8
+
+3. Technikum Medyczne HealTech:
+    Kierunki kształcenia: Medycyna, Farmacja, Pielęgniarstwo
+    Koła zainteresowań: Klub medyczny, Symulacje medyczne
+    Szczególne zalety: Praktyki w szpitalach, wysoki poziom bezpieczeństwa, doskonałe wyniki egzaminów.
+    Ocena: 9, 8, 8, 7, 9, 9, 8, 8, 7, 9
+
+4. Technikum Humanistyczne Humanitas:
+    Kierunki kształcenia: Filozofia, Psychologia, Socjologia
+    Koła zainteresowań: Klub filozoficzny, Badania psychologiczne
+    Szczególne zalety: Bogaty program humanistyczny, innowacyjne podejście do nauki psychologii, konkursy filozoficzne.
+    Ocena: 8, 8, 8, 7, 8, 8, 8, 7, 6, 7
+
+5. Technikum Sportowe Sport Excellence:
+    Kierunki kształcenia: Wychowanie fizyczne, Sporty drużynowe, Dietetyka
+    Koła zainteresowań: Klub sportowy, Klub zdrowego stylu życia
+    Szczególne zalety: Doskonałe zaplecze sportowe, programy stypendialne dla utalentowanych sportowców, sukcesy sportowe.
+    Ocena: 9, 9, 9, 9, 9, 8, 8, 7, 8, 9
+
+6. Technikum Ekologiczne EcoGreen:
+    Kierunki kształcenia: Ochrona środowiska, Ekologia, Energetyka
+    Koła zainteresowań: Klub ekologiczny, Badania nad zmianami klimatycznymi
+    Szczególne zalety: Aktywne zaangażowanie w ochronę środowiska, programy edukacyjne dotyczące zrównoważonego rozwoju, sukcesy w konkursach ekologicznych.
+    Ocena: 9, 8, 8, 8, 9, 9, 8, 7, 7, 8
+
+7. Technikum Biznesowe Future Business Leaders:
+    Kierunki kształcenia: Ekonomia, Zarządzanie, Przedsiębiorczość
+    Koła zainteresowań: Klub przedsiębiorców, Symulacje biznesowe
+    Szczególne zalety: Kursy z zakresu ekonomii i zarządzania, współpraca z lokalnymi firmami, sukcesy uczniów w konkursach biznesowych.
+    Ocena: 8, 9, 9, 7, 8, 8, 8, 7, 7, 9
+
+8. Technikum Języków Obcych Global Linguists:
+    Kierunki kształcenia: Lingwistyka, Tłumaczenia, Kulturoznawstwo
+    Koła zainteresowań: Klub językowy, Międzynarodowa wymiana uczniów
+    Szczególne zalety: Bogata oferta językowa, międzynarodowa atmosfera, programy stypendialne dla kursów za granicą.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 7, 9
+
+9. Technikum Inżynieryjne Engineering Innovators:
+    Kierunki kształcenia: Inżynieria, Elektrotechnika, Mechanika
+    Koła zainteresowań: Klub inżynierów, Projekty inżynierskie
+    Szczególne zalety: Zaawansowane laboratoria, inwestycje w nowoczesne technologie, sukcesy w konkursach inżynieryjnych.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 7, 9
+
+10. Technikum Kulinarno-Gastronomiczne Culinary Delights:
+    Kierunki kształcenia: Gastronomia, Szef kuchni, Obsługa restauracji
+    Koła zainteresowań: Klub kulinarny, Organizacja wydarzeń kulinarnych
+    Szczególne zalety: Doskonałe zaplecze kulinarno-gastronomiczne, praktyki w renomowanych restauracjach, sukcesy w konkursach kulinarnych.
+    Ocena: 9, 9, 9, 8, 9, 8, 7, 7, 7, 9
