@@ -22,7 +22,7 @@ query = None
 school = None
 if len(sys.argv) > 2:
   query = sys.argv[2]
-  school = sys.argv[1]
+  school = sys.argv[1].lower()
 
 if PERSIST and os.path.exists("persist"):
   print("Reusing index...\n")

@@ -26,6 +26,8 @@ app.post('/chatgpt', (req, res) => {
       if (err) res.send({error: stderr});
 
       result = stdout;
+      if (result === "brak") return res.send({answer: "debil"});
+      
       console.log(`got school type: ${result}`)
       const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. Odpowiadaj jedynie poprzez nazwę szkół, (teraz wpisz /),  kierunkiem, który mam wybrać i maksymalnie 20-wyrazowym wytłumaczeniem wyboru. Mój profil jest taki: W przyszłości chcę się zajmować: ${future_plans}. Hobby: ${hobby}. Moje oceny: ${education_status}. Dodatkowe informacje: ${about_me}. Pamiętaj, żeby zwracać się na ty`;
       cmd = `python3 chatgpt.py ${result} "${query}"`

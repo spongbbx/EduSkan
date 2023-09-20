@@ -1,0 +1,49 @@
+1. Branżowa Szkoła Informatyczna IT Pro:
+    Kierunki kształcenia: Technik informatyk, Administrator sieci, Programista aplikacji mobilnych
+    Praktyki zawodowe: Praktyki w firmach IT, tworzenie aplikacji.
+    Ocena: 9, 8, 9, 7, 9, 8, 7, 6, 5, 8
+
+2. Szkoła Sztuk Pięknych ArtVision:
+    Kierunki kształcenia: Grafik komputerowy, Fotograf, Rzeźbiarz
+    Praktyki zawodowe: Tworzenie projektów graficznych, wystawy artystyczne.
+    Ocena: 7, 8, 9, 9, 9, 8, 7, 6, 4, 8
+
+3. Branżowa Szkoła Medyczna CareMaster:
+    Kierunki kształcenia: Pielęgniarka, Opiekun medyczny, Technik laboratoryjny
+    Praktyki zawodowe: Opieka nad pacjentami, praca w laboratoriach.
+    Ocena: 8, 7, 8, 7, 9, 9, 8, 7, 6, 8
+
+4. Branżowa Szkoła Elektroniczna Electronix:
+    Kierunki kształcenia: Elektronik, Technik automatyk, Elektromechanik
+    Praktyki zawodowe: Naprawa urządzeń elektronicznych, projektowanie układów elektronicznych.
+    Ocena: 9, 8, 9, 8, 9, 8, 7, 7, 6, 9
+
+5. Branżowa Szkoła Gastronomiczna Culinary Art:
+    Kierunki kształcenia: Kucharz, Sommelier, Technik dietetyk
+    Praktyki zawodowe: Przygotowywanie potraw, degustacje win, doradztwo dietetyczne.
+    Ocena: 8, 7, 8, 7, 9, 9, 8, 7, 6, 7
+
+6.Branżowa Szkoła Budowlana BuildTech:
+    Kierunki kształcenia: Technik budowlany, Architekt, Elektryk budowlany
+    Praktyki zawodowe: Prace budowlane, projektowanie i nadzór budowy.
+    Ocena: 8, 8, 9, 7, 8, 7, 8, 6, 8, 8
+
+7. Branżowa Szkoła Motoryzacyjna AutoMasters:
+    Kierunki kształcenia: Mechanik samochodowy, Diagnosta pojazdów, Elektronik samochodowy
+    Praktyki zawodowe: Naprawa i konserwacja pojazdów, diagnostyka elektroniczna.
+    Ocena: 8, 8, 9, 7, 8, 7, 8, 6, 8, 8
+
+8. Branżowa Szkoła Fryzjerska HairStyle:
+    Kierunki kształcenia: Stylista fryzur, Wizażysta, Technik masażysta
+    Praktyki zawodowe: Wykonywanie fryzur i makijażu, masaż ciała.
+    Ocena: 7, 8, 9, 9, 9, 8, 7, 6, 4, 8
+
+9. Branżowa Szkoła Rolnicza AgroExpert:
+    Kierunki kształcenia: Rolnik, Ogrodnik, Technik weterynarii
+    Praktyki zawodowe: Prace rolnicze, uprawa roślin, opieka nad zwierzętami.
+    Ocena: 8, 8, 9, 7, 8, 7, 9, 6, 7, 8
+
+10. Branżowa Szkoła Hotelarska Hospitality Academy:
+    Kierunki kształcenia: Recepcjonista hotelowy, Kucharz, Manager restauracji
+    Praktyki zawodowe: Obsługa hotelowa, przygotowywanie dań kuchni, zarządzanie lokalem gastronomicznym.
+    Ocena: 9, 9, 9, 9, 9, 8, 7, 7, 6, 9
