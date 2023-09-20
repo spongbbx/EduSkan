@@ -99,10 +99,20 @@ body {
 /* -------------------------------------------szkoły----------------------------------- */
 
 .szkoly{
-    margin: 1% 4%;
-    background-color: #fff;
-    width: 100px;
+    margin: 1% 4% 1% 4%;
+    background-color: rgba(15, 27, 37);
+    width: 92%;
     height: 100%;
+    color: rgba(15, 27, 37);
+}
+
+.szkola{
+    padding: 1% 3% 1% 1%;
+    background-color: #fffffff8;
+    height: 100%;
+    width: 20%;
+    margin-bottom: 2%;
+    border-radius: 15px;
 }
 
 /* ---------------------------------- do animacji------------------- */
