@@ -512,13 +512,13 @@ textarea::placeholder {
 
 #cele {
     width: 100vw;
-    margin: 3% 0;
+    margin: 3% auto;
     padding-top: 160px;
 }
 
 .cele {
     display: flex;
-    margin: 0 auto;
+    margin: 0 7%;
 }
 
 .cel {
@@ -586,7 +586,7 @@ textarea::placeholder {
 
 .list-ic.vertical {
     padding: 0;
-    width: fit-content;
+    width: 100%;
 }
 
 .list-ic.vertical li {
@@ -595,7 +595,7 @@ textarea::placeholder {
 }
 
 .list-ic.vertical li span {
-    margin: 1em 0;
+    margin: 10% 0;
 }
 
 .list-ic.vertical li::before {
@@ -619,9 +619,33 @@ textarea::placeholder {
 }
 
 .cel p {
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
-    width: 50vw;
+    width: auto;
+}
+
+.cel5 {
+    flex-basis: 50%;
+    margin-top: 5.5%;
+    margin-left: 5%;
+}
+
+.cel5 .cel {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.cel5 .cel h2 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cel5 .cel .opis {
+    position: relative;
+    width: fit-content;
+    text-align: justify;
+    font-size: 18px;
 }
 
 
