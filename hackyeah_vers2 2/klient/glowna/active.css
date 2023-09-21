@@ -788,6 +788,16 @@ nav .fa-solid {
     .drugi {
         transform: rotate(180deg) translateY(-52%);
     }
+    .cele {
+        display: block;
+    }
+    .cel5 {
+        margin: 0 auto;
+    }
+    .rowcele {
+        width: 50%;
+        margin: 3% auto 4% auto;
+    }
 }
 
 
@@ -895,6 +905,9 @@ nav .fa-solid {
     .drugi {
         transform: rotate(180deg) translateY(-75%);
     }
+    .rowcele {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -976,6 +989,30 @@ nav .fa-solid {
     }
     .drugi {
         transform: rotate(180deg) translateY(-101%);
+    }
+    #cele ul li h2 {
+        font-size: 40px;
+    }
+    #cele ul li p {
+        font-size: 20px;
+    }
+    .list-ic li span {
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.42em;
+        font-size: 40px;
+    }
+    .list-ic.vertical li::before {
+        top: -70px;
+        left: 20px;
+        width: 0.15em;
+        height: 3em;
+    }
+    .cel p {
+        width: 50%;
+    }
+    .list-ic li {
+        width: max-content;
     }
 }
 

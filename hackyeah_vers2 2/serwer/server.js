@@ -25,7 +25,7 @@ app.post('/chatgpt', (req, res) => {
     child = exec(cmd, (err, stdout, stderr) => {
       if (err) res.send({error: stderr});
 
-      result = stdout;
+      result = stdout.toLowerCase().replace(/[^a-zA-Z]/g, '');
       if (result === "brak") return res.send({answer: "debil"});
       
       console.log(`got school type: ${result}`)
