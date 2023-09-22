@@ -73,6 +73,8 @@ const authorElements = document.querySelectorAll('.author');
 const oCol1Elements = document.querySelectorAll('.o-col-1');
 const oCol2Elements = document.querySelectorAll('.o-col-2');
 const rowceleElements = document.querySelectorAll('.rowcele');
+const cel5Elements = document.querySelectorAll('.cel5');
+
 
 let animationTriggered = false; // Flag to track if the animation has been triggered
 
@@ -131,6 +133,21 @@ function handleScroll() {
             }
         });
     }
+
+    if (iscel5InViewport()) {
+        cel5Elements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+        
+        cel5Elements.forEach((element) => {
+            if (!element.classList.contains('appear-on-scroll')) {
+                element.classList.add('appear-on-scroll');
+            }
+        });
+    }
+
 }
 // Function to check if .o-col-2 element is in the viewport
 function isOCol2InViewport() {
@@ -147,6 +164,18 @@ function isOCol2InViewport() {
 
 function isRowceleInViewport() {
     return Array.from(rowceleElements).some(element => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    });
+}
+
+function iscel5InViewport() {
+    return Array.from(cel5Elements).some(element => {
         const rect = element.getBoundingClientRect();
         return (
             rect.bottom >= 0 &&

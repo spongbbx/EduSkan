@@ -1009,10 +1009,23 @@ nav .fa-solid {
         height: 3em;
     }
     .cel p {
-        width: 50%;
+        width: 80%;
     }
     .list-ic li {
-        width: max-content;
+        width: 90vw;
+    }
+    .rowcele {
+        width: 100%;
+        margin: 0;
+    }
+    .cel5 {
+        margin-top: 20px;
+    }
+    .cel5 .cel .opis {
+        font-size: 13px;
+    }
+    .cel5 .cel h2 {
+        font-size: 40px;
     }
 }
 
