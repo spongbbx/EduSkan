@@ -21,6 +21,10 @@ body {
     background-color: rgba(15, 27, 37);
     color: #fff;
 }
+link{
+    color: #fff;
+    background-color: #fff;
+}
 
 #odp {
     display: flex;
