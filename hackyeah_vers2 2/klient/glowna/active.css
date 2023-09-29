@@ -560,6 +560,7 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     justify-content: left;
+    width: fit-content;
 }
 
 .list-ic li span {
@@ -595,7 +596,8 @@ textarea::placeholder {
 
 .list-ic.vertical {
     padding: 0;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .list-ic.vertical li {
@@ -620,17 +622,12 @@ textarea::placeholder {
 
 .cel {
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 0 0 30px;
 }
 
 .cel h2 {
     font-size: 50px;
-}
-
-.cel p {
-    font-size: 25px;
-    position: absolute;
-    width: auto;
+    height: 41px;
 }
 
 .cel5 {
@@ -1001,41 +998,43 @@ nav .fa-solid {
     }
     #cele ul li h2 {
         font-size: 40px;
+        height: 32px;
     }
-    #cele ul li p {
-        font-size: 20px;
-    }
-    .list-ic li span {
-        width: 1.2em;
-        height: 1.2em;
-        line-height: 1.42em;
-        font-size: 40px;
-    }
-    .list-ic.vertical li::before {
-        top: -70px;
-        left: 20px;
-        width: 0.15em;
-        height: 3em;
-    }
-    .cel p {
-        width: 80%;
-    }
-    .list-ic li {
-        width: 90vw;
-    }
-    .rowcele {
-        width: 100%;
-        margin: 0;
-    }
-    .cel5 {
-        margin-top: 20px;
-    }
-    .cel5 .cel .opis {
-        font-size: 13px;
-    }
-    .cel5 .cel h2 {
-        font-size: 40px;
-    }
+}
+
+.list-ic li span {
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.42em;
+    font-size: 40px;
+}
+
+.list-ic.vertical li::before {
+    top: -60px;
+    left: 20px;
+    width: 0.15em;
+    height: 2em;
+}
+
+.list-ic li {
+    width: fit-content;
+}
+
+.rowcele {
+    width: 100%;
+    margin: 0;
+}
+
+.cel5 {
+    margin-top: 20px;
+}
+
+.cel5 .cel .opis {
+    font-size: 13px;
+}
+
+.cel5 .cel h2 {
+    font-size: 40px;
 }
 
 @media (min-width: 2560px) {}
