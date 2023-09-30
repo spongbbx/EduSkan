@@ -7,10 +7,12 @@ const port = 2137;
 
 const PONADPODSTWAOWA_QUERY = "Mój profil jest taki: Moje mocne strony: QUESTION_1; Moje słabe strony: QUESTION_2; Moje hobby: QUESTION_3; Opis mojej idealnej szkoły: QUESTION_4";
 const AKADEMICKA_QUERY = "Mój profil jest taki: Czym chcę się zajmować w przyszłości: QUESTION_1; Jakich przedmiotów uczę się najchętniej: QUESTION_2; Wybieram studia dzienne czy zaoczne, dlaczego: QUESTION_3; Jakie dodatkowe aktywności mnie interesują: QUESTION_4";
+const POZASZKOLNA_QUERY = "";
 
 const SCHOOLS_QUERIES = {
   'akademicka': AKADEMICKA_QUERY,
-  'ponadpodstawowa': PONADPODSTWAOWA_QUERY
+  'ponadpodstawowa': PONADPODSTWAOWA_QUERY,
+  'pozaszkolna': POZASZKOLNA_QUERY
 }
 
 app.use(cors())
