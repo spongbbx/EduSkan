@@ -1,0 +1,2 @@
+Są 3 rodzaje szkół ponadpodstawowych: technikum, liceum i branzowa.
+Na podstawie opisu ucznia, który stoi przed wyborem szkoły, odpowiedz jednym wyrazem, który rodzaj szkoły najlepiej do niego pasuje. W przypadku braku wystarczających informacji na temat ucznia - napisz brak.

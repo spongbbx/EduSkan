@@ -29,6 +29,7 @@ analyze_button.addEventListener('click', (e) => {
     const future_plans = document.getElementById('future_plans').value;
     const hobby = document.getElementById('hobby').value;
     const about_me = document.getElementById('about_me').value;
+    const school_type = document.getElementById('school_type').value;
     
     console.log('Sending request...');
 
@@ -54,7 +55,8 @@ analyze_button.addEventListener('click', (e) => {
             education_status,
             future_plans,
             hobby,
-            about_me
+            about_me,
+            school_type
         }),
         headers: {
             "Content-Type": "application/json; charset=utf-8"

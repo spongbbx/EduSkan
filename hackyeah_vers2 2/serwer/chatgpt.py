@@ -20,16 +20,17 @@ PERSIST = False
 
 query = None
 school = None
-if len(sys.argv) > 2:
-  query = sys.argv[2]
-  school = sys.argv[1].lower()
+if len(sys.argv) > 3:
+  query = sys.argv[3]
+  school = sys.argv[2].lower()
+  school_type = sys.argv[1].lower()
 
 if PERSIST and os.path.exists("persist"):
   print("Reusing index...\n")
   vectorstore = Chroma(persist_directory="persist", embedding_function=OpenAIEmbeddings())
   index = VectorStoreIndexWrapper(vectorstore=vectorstore)
 else:
-  loader = TextLoader(f"data/{school}.txt") # Use this line if you only need data.txt
+  loader = TextLoader(f"data/{school_type}/{school}.txt") # Use this line if you only need data.txt
   #loader = DirectoryLoader("data/")
   if PERSIST:
     index = VectorstoreIndexCreator(vectorstore_kwargs={"persist_directory":"persist"}).from_loaders([loader])
