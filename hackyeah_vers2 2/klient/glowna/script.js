@@ -213,3 +213,67 @@ window.addEventListener('load', handleScroll);
 // Manually trigger the scroll event on page load to check initial state
 window.dispatchEvent(new Event('scroll'));
 
+function refreshPage() {
+    location.reload(); // This reloads the current page
+}
+
+function changePlaceholders() {
+    // Get the selected radio value
+    var selectedValue = document.querySelector('input[name="szkola"]:checked').value;
+    
+    // Get the textareas by their IDs
+    var textarea1 = document.getElementById('question_1');
+    var textarea2 = document.getElementById('question_2');
+    var textarea3 = document.getElementById('question_3');
+    var textarea4 = document.getElementById('question_4');
+
+    // Set the placeholders based on the selected value
+    if (selectedValue === 'ponadpodstawowa') {
+        textarea1.placeholder = "Jakie są Twoje mocne strony? (Cechy charakteru, przedmioty szkolne, osiągnięcia naukowe itp.)";
+        textarea2.placeholder = "Jakie są Twoje słabe strony? Co chcesz u siebie poprawić? (Przedmioty szkolne, cechy charakteru itp.)";
+        textarea3.placeholder = "Jakie masz hobby i umiejętności? (Sport, turystyka, gra na instrumencie, rysowanie itp.)";
+        textarea4.placeholder = "Opisz swoją wymarzoną szkołę – czego od niej oczekujesz? (Wolontariat, koła zainteresowań, teatr itp.)";
+    } else if (selectedValue === 'akademicka') {
+        textarea1.placeholder = "Czym chcesz się zajmować w przyszłości? (Dziedzina, zawód, własna działalność gospodarcza itd.)";
+        textarea2.placeholder = "Jakich przedmiotów uczysz się najchętniej? Które z nich wybierzesz na maturze?";
+        textarea3.placeholder = "Wybierasz studia dzienne czy zaoczne? Dlaczego?";
+        textarea4.placeholder = "Jakie dodatkowe aktywności Cię interesują? (Koła naukowe, sport akademicki, wolontariat, granty itd.)";
+    } else if (selectedValue === 'pozaszkolna') {
+        textarea1.placeholder = "Dlaczego szukasz dodatkowych form kształcenia?";
+        textarea2.placeholder = "Preferujesz nauczanie indywidualne czy grupowe? Dlaczego?";
+        textarea3.placeholder = "Wolisz naukę zdalną, stacjonarną czy hybrydową?";
+        textarea4.placeholder = "Jaka dziedzina Cię interesuje? Ile wiesz na jej temat?";
+    }
+    var radios = document.getElementsByName('szkola');
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                setReadOnly(false); // If a radio button is selected, make textareas editable
+                return;
+            }
+        }
+        setReadOnly(true);
+}
+
+setReadOnly(true);
+
+window.onload = function() {
+    // Get references to the input elements and radio buttons
+    var radioButtons = document.querySelectorAll('input[name="szkola"]');
+    var textInputs = document.querySelectorAll('.input');
+
+    // Clear radio buttons and text inputs
+    for (var i = 0; i < radioButtons.length; i++) {
+        radioButtons[i].checked = false;
+    }
+
+    for (var i = 0; i < textInputs.length; i++) {
+        textInputs[i].value = '';
+    }
+};
+
+function setReadOnly(value) {
+    document.getElementById('question_1').readOnly = value;
+    document.getElementById('question_2').readOnly = value;
+    document.getElementById('question_3').readOnly = value;
+    document.getElementById('question_4').readOnly = value;
+}

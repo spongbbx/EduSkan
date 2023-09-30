@@ -47,6 +47,10 @@ link {
 
 #odp .col-2 {
     background-color: #fff;
+    box-shadow: 0 2px 4px black;
+    padding: 2% 1% 1% 1%;
+    text-align: center;
+    pointer-events: all;
 }
 
 .radio {
@@ -292,6 +296,7 @@ h1:not(.logo) {
 
 .teks h1 {
     width: auto;
+    margin-bottom: 2%;
 }
 
 .tekstp {
@@ -785,6 +790,9 @@ nav .fa-solid {
         max-width: 50%;
         height: 100%;
     }
+    #odp .col-2 {
+        max-width: 70%;
+    }
     .form {
         width: 100%;
     }
@@ -945,6 +953,9 @@ nav .fa-solid {
     .rowcele {
         width: 100%;
     }
+    #odp .col-2 {
+        max-width: 80%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1030,6 +1041,9 @@ nav .fa-solid {
     #cele ul li h2 {
         font-size: 40px;
         height: 32px;
+    }
+    #odp .col-2 {
+        max-width: 90%;
     }
 }
 

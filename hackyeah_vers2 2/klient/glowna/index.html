@@ -23,8 +23,11 @@
         <div id="odp" class="hidden">
             <div class="form col-2" style="width: fit-content; height: fit-content; margin: 0;">
                 <h1 id="school-name"></h1>
-                <h3 id="school-kierunek"></h3>
+                <h2 id="school-kierunek"></h2>
                 <p id="chatbot-answer"></p>
+                <div class="guzik">
+                    <button class="button" id="reboot" onclick="refreshPage()">Gotowe</button>
+                </div>
             </div>
         </div>
 
@@ -57,7 +60,9 @@
                     <div class="teks">
                         <br>
                         <h1>Czyżbyś błądził?<br> My pomożemy!</h1> <br>
-                        <p class="tekstp">Z naszym bardzo nowoczesnym systemem już nie musisz się martwić co począć dalej! Wystarczy, że podasz nam kilka informacji, a zmienimy Twoje życie w mgnieniu oka!</p>
+                        <p class="tekstp">Z naszą innowacyjną wyszukiwarką placówek edukacyjnych, opartą na sztucznej inteligencji, szybko odnajdziesz najlepiej dopasowaną do Ciebie szkołę lub uczelnię! <br><br>Zadamy Ci tylko kilka pytań – odpowiedz rzetelnie własnymi
+                            słowami
+                        </p>
 
                     </div>
                     <div class="zdjecie">
@@ -70,24 +75,21 @@
                     <div class="form">
                         <h2 class="formularz">ZACZNIJMY!</h2>
                         <div class="inputdiv radio">
-                            <input type="radio" value="ponadpodstawowa" name="szkola">Szkoła ponadpostawowa<br>
-                            <input type="radio" value="akademicka" name="szkola">Uczelnia wyższa<br>
-                            <input type="radio" value="pozaszkolna" name="szkola">Pozaszkolne formy kształcenia
+                            <input type="radio" value="ponadpodstawowa" name="szkola" onchange="changePlaceholders()">Szkoła ponadpostawowa<br>
+                            <input type="radio" value="akademicka" name="szkola" onchange="changePlaceholders()">Uczelnia wyższa<br>
+                            <input type="radio" value="pozaszkolna" name="szkola" onchange="changePlaceholders()">Pozaszkolne formy kształcenia
                         </div>
                         <div class="inputdiv">
-                            <textarea type="text" placeholder="Jakie masz oceny?" class="input" id="question_1"></textarea>
+                            <textarea type="text" placeholder="Wybierz szkołę powyżej" class="input" rows="3" id="question_1"></textarea>
                         </div>
-
                         <div class="inputdiv">
-                            <textarea type="text" placeholder="Czym chcesz się zajmować w przyszłości?" class="input" id="question_2"></textarea>
+                            <textarea type="text" placeholder="" class="input" rows="3" id="question_2"></textarea>
                         </div>
-
                         <div class="inputdiv">
-                            <textarea type="text" placeholder="Czy masz jakieś hobby?" class="input" id="question_3"></textarea>
+                            <textarea type="text" placeholder="" class="input" rows="3" id="question_3"></textarea>
                         </div>
-
                         <div class="inputdiv">
-                            <textarea maxlength="1000" class="input" name="omnie" id="question_4" type="text" rows="8" placeholder="Opisz siebie jak najdokładniej możesz, opowiedz nam o czym zechcesz - im więcej napiszesz, tym dokładniej dobierzemy Ci kierunek"></textarea>
+                            <textarea class="input" name="omnie" id="question_4" rows="3" type="text" placeholder=""></textarea>
                         </div>
                         <div class="loading-container" id="preloader">
                             <div class="loading-circle"></div>
@@ -279,33 +281,33 @@
                                     <li>
                                         <span>1</span>
                                         <div class="cel">
-                                            <h2>Cel 1</h2>
+                                            <h2>Aplikacja</h2>
                                         </div>
                                     </li>
-                                    <li class="no">
+                                    <li>
                                         <span>2</span>
                                         <div class="cel">
-                                            <h2>Cel 2</h2>
+                                            <h2>Serwer</h2>
                                         </div>
                                     </li>
                                     <li class="no">
                                         <span>3</span>
                                         <div class="cel">
-                                            <h2>Cel 3</h2>
+                                            <h2>Domena</h2>
                                         </div>
                                     </li>
                                     <li class="no">
                                         <span>4</span>
                                         <div class="cel">
-                                            <h2>Cel 4</h2>
+                                            <h2>Inwestorzy</h2>
                                         </div>
-
                                     </li>
+
                                 </ul>
                             </div>
                             <div class="cel5">
                                 <div class="cel">
-                                    <h2>Cel 5</h2>
+                                    <h2>Przyszłość</h2>
                                     <p class="opis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias suscipit veniam
                                         sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias
                                         suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam
