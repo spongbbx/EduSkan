@@ -7,7 +7,7 @@ const port = 2137;
 
 const PONADPODSTWAOWA_QUERY = "Mój profil jest taki: Moje mocne strony: QUESTION_1; Moje słabe strony: QUESTION_2; Moje hobby: QUESTION_3; Opis mojej idealnej szkoły: QUESTION_4";
 const AKADEMICKA_QUERY = "Mój profil jest taki: Czym chcę się zajmować w przyszłości: QUESTION_1; Jakich przedmiotów uczę się najchętniej: QUESTION_2; Wybieram studia dzienne czy zaoczne, dlaczego: QUESTION_3; Jakie dodatkowe aktywności mnie interesują: QUESTION_4";
-const POZASZKOLNA_QUERY = "Mój profil jest taki: ";
+const POZASZKOLNA_QUERY = "Mój profil jest taki: Dlaczego szukam dodatkowych form kształcenia: QUESTION_1; Preferuje nauczanie indywidualne czy grupowe i dlaczego: QUESTION_2; Wolę naukę zdalną, stacjonarną czy hybrydową: QUESTION_3; Jaka dziedzina mnie interesuje i ile wiem na jej temat: QUESTION_4";
 
 const SCHOOLS_QUERIES = {
   'akademicka': AKADEMICKA_QUERY,
@@ -48,33 +48,31 @@ app.post('/chatgpt', (req, res) => {
       if (err) res.send({error: stderr});
 
       result = stdout.toLowerCase();
-      if (result === "brak") {
-		cmd = `python3 chatgpt.py brak brak ""`;
-		return res.send({answer: JSON.stringify({school: 'debil', kierunek: 'debilowaty', explanation: 'no debil i tyle'})})
-      }
-
-	console.log(result);
-
-      if (result === "humor") {
+      console.log(result);
+      //if (result === "brak") {
+//		cmd = `python3 chatgpt.py brak brak ""`;
+//		return res.send({answer: JSON.stringify({school: 'debil', kierunek: 'debilowaty', explanation: 'no debil i tyle'})})
+/*      } else */if (result === "humor" || result === "brak") {
 	console.log('dupa');
-        cmd = 'python3 chatgpt.py humor humor "ok."';
-        child2 = exec(cmd, (err, stdout, stderr) => {
+        cmd = 'python3 chatgpt.py humor humor ""';
+	        child2 = exec(cmd, (err, stdout, stderr) => {
           console.log(stdout);
           console.log(stderr);
           return res.send({answer: JSON.stringify({school: "Brak", kierunek: "brak", explanation: stdout}), err: err});
         })
-      }
+      } else {
       
-      console.log(`got school type: ${result}`)
-      const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. ${school_query}`;
-      cmd = `python3 chatgpt.py ${school_type} ${result} "${query} Odpowiedź podaj w formacie JSON, gdzie w polu school bedzie nazwa szkoły, w polu kierunek kierunek który wybrałeś, a w polu explanation krótkie wyjaśnienie dlaczego ta szkoła jest dla mnie odpowiednia (pisz to do mnie, nie w pierwszej osobie)."`
+      	console.log(`got school type: ${result}`)
+      	const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. ${school_query}`;
+      	cmd = `python3 chatgpt.py ${school_type} ${result} "${query} Odpowiedź podaj w formacie JSON to bardzo ważne!!, gdzie w polu school bedzie nazwa szkoły, w polu kierunek kierunek który wybrałeś, a w polu explanation krótkie wyjaśnienie dlaczego ta szkoła jest dla mnie odpowiednia (pisz to do mnie, nie w pierwszej osobie). Pamiętaj o formacie JSON!!"`
 
-      console.log('looking for school');
-      child2 = exec(cmd, (err, stdout, stderr) => {
-        console.log(stdout);
-        console.log(stderr);
-        res.send({answer: stdout, err: err});
-      })
+      	console.log('looking for school');
+      	child2 = exec(cmd, (err, stdout, stderr) => {
+        	console.log(stdout);
+        	console.log(stderr);
+        	res.send({answer: stdout, err: err});
+      	})
+      }
     })
 })
 
