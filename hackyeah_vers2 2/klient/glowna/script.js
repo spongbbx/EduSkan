@@ -30,8 +30,6 @@ analyze_button.addEventListener('click', (e) => {
     const question_3 = document.getElementById('question_3').value;
     const question_4 = document.getElementById('question_4').value;
     const school_type = document.querySelector('input[name="szkola"]:checked').value;
-    const answer_paragraph = document.getElementById('chatbot-answer');
-    const odp = document.getElementById('odp');
     
     console.log('Sending request...');
     console.log({question_1, question_2, question_3, question_4, school_type});
@@ -71,7 +69,18 @@ analyze_button.addEventListener('click', (e) => {
         const answer  = json.answer;
 
         if (answer) {
-            answer_paragraph.innerHTML = answer;
+            answer_json = JSON.parse(json.answer);
+            console.log(answer_json)
+
+            const school_name = document.getElementById('school-name');
+            const school_kierunek = document.getElementById('school-kierunek');
+            const odp = document.getElementById('odp');
+
+            const answer_paragraph = document.getElementById('chatbot-answer');
+
+            school_name.innerHTML = answer_json.school;
+            school_kierunek.innerHTML = answer_json.kierunek;
+            answer_paragraph.innerHTML = answer_json.explanation;
             odp.classList.remove('hidden');
             
         }
