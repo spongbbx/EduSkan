@@ -52,7 +52,7 @@ app.post('/chatgpt', (req, res) => {
       
       console.log(`got school type: ${result}`)
       const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. Odpowiadaj jedynie poprzez nazwę szkół, (teraz wpisz /),  kierunkiem, który mam wybrać i maksymalnie 20-wyrazowym wytłumaczeniem wyboru. ${school_query}`;
-      cmd = `python3 chatgpt.py ${school_type} ${result} "${query}"`
+      cmd = `py chatgpt.py ${school_type} ${result} "${query}"`
 
       console.log('looking for school');
       child2 = exec(cmd, (err, stdout, stderr) => {

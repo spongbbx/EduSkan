@@ -27,6 +27,10 @@ link {
     background-color: #fff;
 }
 
+#chatbot-answer {
+    color: #000;
+}
+
 .hidden {
     display: none !important;
 }

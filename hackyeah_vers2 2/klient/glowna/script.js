@@ -67,11 +67,13 @@ analyze_button.addEventListener('click', (e) => {
     })
     .then((res) => res.json())
     .then((json) => {
+        console.log(json)
         const answer  = json.answer;
 
         if (answer) {
             answer_paragraph.innerHTML = answer;
             odp.classList.remove('hidden');
+            
         }
     });
 });
