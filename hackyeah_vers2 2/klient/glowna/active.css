@@ -26,6 +26,23 @@ link{
     background-color: #fff;
 }
 
+#odp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+#odp .col-2 {
+    background-color: #fff;
+}
+
 
 /* -------------------------------------------main----------------------------------- */
 
@@ -80,8 +97,8 @@ link{
     color: white;
 }
 
-/* --------------------------allert--------------------------------- */
 
+/* --------------------------allert--------------------------------- */
 
 
 /* -----------------------------------------kolumny---------------------------------------- */
