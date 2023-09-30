@@ -21,7 +21,8 @@ body {
     background-color: rgba(15, 27, 37);
     color: #fff;
 }
-link{
+
+link {
     color: #fff;
     background-color: #fff;
 }
@@ -41,6 +42,16 @@ link{
 
 #odp .col-2 {
     background-color: #fff;
+}
+
+.radio {
+    color: black;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.radio input {
+    margin: 0 7px 15px 0;
 }
 
 
