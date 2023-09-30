@@ -29,9 +29,12 @@ analyze_button.addEventListener('click', (e) => {
     const question_2 = document.getElementById('question_2').value;
     const question_3 = document.getElementById('question_3').value;
     const question_4 = document.getElementById('question_4').value;
-    const school_type = document.getElementById('school_type').value;
+    const school_type = document.querySelector('input[name="szkola"]:checked').value;
+    const answer_paragraph = document.getElementById('chatbot-answer');
+    const odp = document.getElementById('odp');
     
     console.log('Sending request...');
+    console.log({question_1, question_2, question_3, question_4, school_type});
 
      // Schowaj przycisk "analyze"
     document.getElementById("analyze").style.display = "none";
@@ -64,9 +67,12 @@ analyze_button.addEventListener('click', (e) => {
     })
     .then((res) => res.json())
     .then((json) => {
-        console.log(json)
+        const answer  = json.answer;
 
-        // bot odpowiedzial, odpowiedz bota to json.answer
+        if (answer) {
+            answer_paragraph.innerHTML = answer;
+            odp.classList.remove('hidden');
+        }
     });
 });
 

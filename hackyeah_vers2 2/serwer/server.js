@@ -41,7 +41,7 @@ app.post('/chatgpt', (req, res) => {
     school_query = school_query.replace('QUESTION_3', question_3);
     school_query = school_query.replace('QUESTION_4', question_4);
 
-    cmd += `python3 chatgpt.py ${school_type} data "${school_query}"`
+    cmd += `py chatgpt.py ${school_type} data "${school_query}"`
     console.log("looking for school type")
 
     child = exec(cmd, (err, stdout, stderr) => {

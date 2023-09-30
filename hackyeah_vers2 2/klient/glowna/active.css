@@ -27,6 +27,10 @@ link {
     background-color: #fff;
 }
 
+.hidden {
+    display: none !important;
+}
+
 #odp {
     display: flex;
     justify-content: center;
