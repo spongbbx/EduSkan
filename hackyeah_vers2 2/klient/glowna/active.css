@@ -27,10 +27,6 @@ link {
     background-color: #fff;
 }
 
-#chatbot-answer {
-    color: #000;
-}
-
 .hidden {
     display: none !important;
 }
@@ -46,6 +42,7 @@ link {
     z-index: 200;
     background-color: transparent;
     pointer-events: none;
+    color: #000;
 }
 
 #odp .col-2 {
