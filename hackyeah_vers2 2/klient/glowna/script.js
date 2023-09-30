@@ -25,10 +25,10 @@ window.addEventListener("scroll", () => {
 analyze_button = document.getElementById('analyze');
 
 analyze_button.addEventListener('click', (e) => {
-    const education_status = document.getElementById('education_status').value;
-    const future_plans = document.getElementById('future_plans').value;
-    const hobby = document.getElementById('hobby').value;
-    const about_me = document.getElementById('about_me').value;
+    const question_1 = document.getElementById('question_1').value;
+    const question_2 = document.getElementById('question_2').value;
+    const question_3 = document.getElementById('question_3').value;
+    const question_4 = document.getElementById('question_4').value;
     const school_type = document.getElementById('school_type').value;
     
     console.log('Sending request...');
@@ -52,10 +52,10 @@ analyze_button.addEventListener('click', (e) => {
     fetch('http://localhost:2137/chatgpt', {
         method: 'POST',
         body: JSON.stringify({
-            education_status,
-            future_plans,
-            hobby,
-            about_me,
+            question_1,
+            question_2,
+            question_3,
+            question_4,
             school_type
         }),
         headers: {
