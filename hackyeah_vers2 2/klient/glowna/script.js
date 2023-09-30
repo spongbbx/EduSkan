@@ -82,6 +82,17 @@ analyze_button.addEventListener('click', (e) => {
             school_kierunek.innerHTML = answer_json.kierunek;
             answer_paragraph.innerHTML = answer_json.explanation;
             odp.classList.remove('hidden');
+            document.getElementById("analyze").style.display = "block";
+
+// Schowaj element "preloader"
+var preloader = document.getElementById("preloader");
+preloader.style.display = "none";
+preloader.style.position = "static";
+preloader.style.visibility = "hidden";
+
+// Zmiana marginesu
+document.querySelector(".loading-circle").style.marginTop = "0%";
+document.querySelector(".loading-circle").style.opacity = "0%";
             
         }
     });
@@ -277,3 +288,7 @@ function setReadOnly(value) {
     document.getElementById('question_3').readOnly = value;
     document.getElementById('question_4').readOnly = value;
 }
+
+window.onerror = function(message, source, lineno, colno, error) {
+    alert(`Ups... Coś poszło nie tak :/`);
+};

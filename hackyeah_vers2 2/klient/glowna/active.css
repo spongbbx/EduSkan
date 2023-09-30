@@ -49,8 +49,18 @@ link {
     background-color: #fff;
     box-shadow: 0 2px 4px black;
     padding: 2% 1% 1% 1%;
-    text-align: center;
+    text-align: justify;
     pointer-events: all;
+}
+
+#odp .col-2 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#odp .col-2 h2 {
+    text-align: center;
+    margin: 5% 0;
 }
 
 .radio {
@@ -792,6 +802,7 @@ nav .fa-solid {
     }
     #odp .col-2 {
         max-width: 70%;
+        padding: 3%;
     }
     .form {
         width: 100%;
@@ -955,6 +966,7 @@ nav .fa-solid {
     }
     #odp .col-2 {
         max-width: 80%;
+        padding: 5%;
     }
 }
 
