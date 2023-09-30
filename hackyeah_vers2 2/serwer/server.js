@@ -48,11 +48,26 @@ app.post('/chatgpt', (req, res) => {
       if (err) res.send({error: stderr});
 
       result = stdout.toLowerCase();
-      if (result === "brak") return res.send({answer: "debil"});
+      if (result === "brak") {
+		cmd = `python3 chatgpt.py brak brak ""`;
+		return res.send({answer: JSON.stringify({school: 'debil', kierunek: 'debilowaty', explanation: 'no debil i tyle'})})
+      }
+
+	console.log(result);
+
+      if (result === "humor") {
+	console.log('dupa');
+        cmd = 'python3 chatgpt.py humor humor "ok."';
+        child2 = exec(cmd, (err, stdout, stderr) => {
+          console.log(stdout);
+          console.log(stderr);
+          return res.send({answer: JSON.stringify({school: "Brak", kierunek: "brak", explanation: stdout}), err: err});
+        })
+      }
       
       console.log(`got school type: ${result}`)
-      const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. Odpowiadaj jedynie poprzez nazwę szkół, (teraz wpisz /),  kierunkiem, który mam wybrać i maksymalnie 20-wyrazowym wytłumaczeniem wyboru. ${school_query}`;
-      cmd = `python3 chatgpt.py ${school_type} ${result} "${query}"`
+      const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. ${school_query}`;
+      cmd = `python3 chatgpt.py ${school_type} ${result} "${query} Odpowiedź podaj w formacie JSON, gdzie w polu school bedzie nazwa szkoły, w polu kierunek kierunek który wybrałeś, a w polu explanation krótkie wyjaśnienie dlaczego ta szkoła jest dla mnie odpowiednia (pisz to do mnie, nie w pierwszej osobie)."`
 
       console.log('looking for school');
       child2 = exec(cmd, (err, stdout, stderr) => {
