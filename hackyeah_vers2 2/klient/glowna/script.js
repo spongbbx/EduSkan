@@ -52,7 +52,7 @@ analyze_button.addEventListener('click', (e) => {
 
     // tu sie zaczyna wysylanie requesta, tu powinny byc jakies animacje jak chcecie czy cos
 
-    fetch('http://localhost:2137/chatgpt', {
+    fetch('http://130.61.188.195:2137/chatgpt', {
         method: 'POST',
         body: JSON.stringify({
             question_1,
