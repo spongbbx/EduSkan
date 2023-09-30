@@ -7,7 +7,7 @@ const port = 2137;
 
 const PONADPODSTWAOWA_QUERY = "Mój profil jest taki: Moje mocne strony: QUESTION_1; Moje słabe strony: QUESTION_2; Moje hobby: QUESTION_3; Opis mojej idealnej szkoły: QUESTION_4";
 const AKADEMICKA_QUERY = "Mój profil jest taki: Czym chcę się zajmować w przyszłości: QUESTION_1; Jakich przedmiotów uczę się najchętniej: QUESTION_2; Wybieram studia dzienne czy zaoczne, dlaczego: QUESTION_3; Jakie dodatkowe aktywności mnie interesują: QUESTION_4";
-const POZASZKOLNA_QUERY = "";
+const POZASZKOLNA_QUERY = "Mój profil jest taki: ";
 
 const SCHOOLS_QUERIES = {
   'akademicka': AKADEMICKA_QUERY,
@@ -41,18 +41,18 @@ app.post('/chatgpt', (req, res) => {
     school_query = school_query.replace('QUESTION_3', question_3);
     school_query = school_query.replace('QUESTION_4', question_4);
 
-    cmd += `py chatgpt.py ${school_type} data "${school_query}"`
+    cmd += `python3 chatgpt.py ${school_type} data "${school_query}"`
     console.log("looking for school type")
 
     child = exec(cmd, (err, stdout, stderr) => {
       if (err) res.send({error: stderr});
 
-      result = stdout.toLowerCase().replace(/[^a-zA-Z]/g, '');
-      if (result === "brak") return res.send({answer: "debil"});
+      result = stdout.toLowerCase();
+      if (result === "brak") return res.send({answer: JSON.stringify({school: 'debil', kierunek: 'debilowaty', explanation: 'no debil i tyle'})});
       
       console.log(`got school type: ${result}`)
-      const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. Odpowiadaj jedynie poprzez nazwę szkół, (teraz wpisz /),  kierunkiem, który mam wybrać i maksymalnie 20-wyrazowym wytłumaczeniem wyboru. ${school_query}`;
-      cmd = `py chatgpt.py ${school_type} ${result} "${query}"`
+      const query = `Podaj mi 1 szkołę spośród podanej listy szkół na podstawie mojego profilu. ${school_query}`;
+      cmd = `python3 chatgpt.py ${school_type} ${result} "${query} Odpowiedź podaj w formacie JSON, gdzie w polu school bedzie nazwa szkoły, w polu kierunek kierunek który wybrałeś, a w polu explanation krótkie wyjaśnienie dlaczego ta szkoła jest dla mnie odpowiednia (pisz to do mnie, nie w pierwszej osobie)."`
 
       console.log('looking for school');
       child2 = exec(cmd, (err, stdout, stderr) => {
