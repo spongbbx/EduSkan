@@ -297,9 +297,17 @@ window.onerror = function(message, source, lineno, colno, error) {
 const wyslij = document.getElementById('Zglos');
 function addschool(){
     wyslij.classList.remove('hidden');
+    document.body.style.overflow = "hidden";
 }
 
 function schowaj() {
     wyslij.classList.add('hidden');
     alert("Dziękujemy! Formularz został przesłany do weryfikacji");
+    document.body.style.overflow = "auto";
+}
+
+function closeDiv(){
+    wyslij.classList.add('hidden');
+
+    document.body.style.overflow = "auto";
 }

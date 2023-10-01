@@ -46,6 +46,10 @@ link {
     color: #000;
 }
 
+#Zglos {
+    
+}
+
 #odp .col-2 {
     background-color: #fff;
     box-shadow: 0 2px 4px black;
@@ -72,6 +76,21 @@ link {
     margin: 0 auto;
     flex-basis: 50%;
     height: fit-content;
+    max-height:75vh;
+    overflow-y: scroll;
+    z-index: 200;
+    
+    
+}
+
+.close-button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 .radio {
