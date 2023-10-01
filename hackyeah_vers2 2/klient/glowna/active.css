@@ -67,6 +67,7 @@ link {
     color: black;
     margin: 0 auto;
     width: fit-content;
+    font-size: 1.5em;
 }
 
 .radio input {
@@ -147,7 +148,7 @@ link {
 }
 
 .col-2 {
-    flex-basis: 500px;
+    flex-basis: 600px;
     background-color: #fffffff8;
     border-radius: 15px;
     margin: 0 auto;
@@ -328,6 +329,7 @@ h1:not(.logo) {
     color: rgba(15, 27, 37);
     text-align: center;
     padding: 5% 0 7% 0;
+    font-size: 3.4em;
 }
 
 .inputdiv {
@@ -511,7 +513,7 @@ textarea::placeholder {
 }
 
 .opis {
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 8%;
     line-height: 120%;
 }
