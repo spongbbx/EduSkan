@@ -293,4 +293,12 @@ window.onerror = function(message, source, lineno, colno, error) {
     alert(`Ups... Coś poszło nie tak :/`);
 };
 
-function addschool(){}
+const wyslij = document.getElementById('Zglos');
+function addschool(){
+    wyslij.classList.remove('hidden');
+}
+
+function schowaj() {
+    wyslij.classList.add('hidden');
+    alert("Dziękujemy! Formularz został przesłany do weryfikacji");
+}

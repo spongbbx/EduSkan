@@ -31,7 +31,8 @@ link {
     display: none !important;
 }
 
-#odp {
+#odp,
+#Zglos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,14 +54,14 @@ link {
     pointer-events: all;
 }
 
-#odp .col-2 h1 {
-    text-align: center;
-    font-size: 30px;
-}
-
-#odp .col-2 h2 {
-    text-align: center;
-    margin: 5% 0;
+#Zglos .col-2 {
+    background-color: #fff;
+    box-shadow: 0 2px 4px black;
+    text-align: justify;
+    pointer-events: all;
+    margin: 0 auto;
+    flex-basis: 50%;
+    height: fit-content;
 }
 
 .radio {
@@ -642,6 +643,10 @@ textarea::placeholder {
     background: gray;
 }
 
+.list-ic .no .cel h2 {
+    color: gray;
+}
+
 .list-ic.vertical {
     padding: 0;
     width: fit-content;
@@ -804,6 +809,10 @@ nav .fa-solid {
     }
     #odp .col-2 {
         max-width: 70%;
+        padding: 3%;
+    }
+    #Zglos .col-2 {
+        max-width: 40%;
         padding: 3%;
     }
     .form {
@@ -976,6 +985,10 @@ nav .fa-solid {
         max-width: 80%;
         padding: 5%;
     }
+    #Zglos .col-2 {
+        max-width: 80%;
+        padding: 5%;
+    }
     .formularz {
         font-size: 35px;
     }
@@ -1067,6 +1080,10 @@ nav .fa-solid {
     }
     #odp .col-2 {
         max-width: 90%;
+    }
+    #Zglos .col-2 {
+        max-width: 90%;
+        flex-basis: 100%;
     }
 }
 

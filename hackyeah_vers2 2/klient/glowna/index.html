@@ -30,6 +30,33 @@
                 </div>
             </div>
         </div>
+        <div id="Zglos" class="hidden">
+            <div class="col-2" id="analiza">
+                <div class="form">
+                    <h2 class="formularz">Zgłoś placówkę</h2>
+                    <div class="inputdiv">
+                        <textarea type="text" placeholder="Pełna nazwa szkoły z adresem" class="input" rows="3"></textarea>
+                    </div>
+                    <div class="inputdiv">
+                        <textarea type="text" placeholder="Kierunki nauczania" class="input" rows="3"></textarea>
+                    </div>
+                    <div class="inputdiv">
+                        <textarea type="text" placeholder="Średnie wyniki matur z ostatniego roku" class="input" rows="3"></textarea>
+                    </div>
+                    <div class="inputdiv">
+                        <textarea type="text" placeholder="Koła zainteresowań" class="input" rows="3"></textarea>
+                    </div>
+                    <div class="inputdiv">
+                        <textarea type="text" placeholder="Co wyróżnia tę szkołę?" class="input" rows="3"></textarea>
+                    </div>
+
+                    <div class="guzik">
+                        <button class="button" id="wyslij" onclick="schowaj()">Wyślij</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="kontener" id="analiza1">
             <!-- ----------------------------menu i logo-------------------------- -->
@@ -42,7 +69,7 @@
                         <li><a href="#oprojekcie">O projekcie</a></li>
                         <li><a href="#autorzy">Autorzy</a></li>
                         <li><a href="#cele">Cele</a></li>
-                        <li><a href="#analiza1" onclick="addschool(); return false;">Zgłoś szkołę</a></li>
+                        <li><a href="#analiza1" onclick="addschool(); return false;">Zgłoś placówkę</a></li>
 
                     </ul>
                     <!-- Hamburger icon -->
@@ -286,25 +313,25 @@
                                     <li>
                                         <span>1</span>
                                         <div class="cel">
-                                            <h2>Aplikacja</h2>
+                                            <h2>Alpha 1.0</h2>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="no">
                                         <span>2</span>
                                         <div class="cel">
-                                            <h2>Serwer</h2>
+                                            <h2>Ankiety</h2>
                                         </div>
                                     </li>
                                     <li class="no">
                                         <span>3</span>
                                         <div class="cel">
-                                            <h2>Domena</h2>
+                                            <h2>Statystyki</h2>
                                         </div>
                                     </li>
                                     <li class="no">
                                         <span>4</span>
                                         <div class="cel">
-                                            <h2>Inwestorzy</h2>
+                                            <h2>Ranking</h2>
                                         </div>
                                     </li>
 
@@ -313,14 +340,11 @@
                             <div class="cel5">
                                 <div class="cel">
                                     <h2>Przyszłość</h2>
-                                    <p class="opis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias suscipit veniam
-                                        sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias
-                                        suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam
-                                        facere molestias suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis atque veritatis vel
-                                        distinctio. Aperiam facere molestias suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas excepturi corporis
-                                        atque veritatis vel distinctio. Aperiam facere molestias suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit nostrum quas
-                                        excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias suscipit veniam sint a quos.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eaque dignissimos dolore veritatis. Reprehenderit
-                                        nostrum quas excepturi corporis atque veritatis vel distinctio. Aperiam facere molestias suscipit veniam sint a quos.</p>
+                                    <p class="opis">Wierzymy, że nasza aplikacja może w szczególny sposób nie tyle pomóc uczniom wybrać prawidłowo swoją przyszłość, ale i pozwolić Ministerstwu Edukacji otrzymać bardziej obszerną oraz dokładniej opisaną bazę danych wszystkich
+                                        placówek oświatowych w kraju.<br><br> Jest bowiem świetną okazją uprościć i zunifikować proces opisywania szkół oraz uczelni pod pretekstem tworzenia systemu rekomendacji, ponieważ każda placówka będzie chciała,
+                                        oczywiście, napisać o sobie jak najwięcej informacji.<br><br> Ważne również jest, aby każdy uczeń mógł możliwie najlepiej sprawdzić, jak bardzo jego oczekiwana są przez daną szkołę spełniane. Połączenie bazy danych
+                                        informacji wprowadzonych przez każdą placówkę, opinii uczniów oraz np. rankingu <i>Perspektywy</i> zapewni dużo dokładniejszy rezultat.
+                                    </p>
                                 </div>
 
                             </div>
