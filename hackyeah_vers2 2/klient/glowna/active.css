@@ -54,6 +54,16 @@ link {
     pointer-events: all;
 }
 
+#odp .col-2 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#odp .col-2 h2 {
+    text-align: center;
+    margin: 5% 0;
+}
+
 #Zglos .col-2 {
     background-color: #fff;
     box-shadow: 0 2px 4px black;
