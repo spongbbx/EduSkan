@@ -61,7 +61,8 @@ analyze_button.addEventListener('click', (e) => {
         }),
         headers: {
             "Content-Type": "application/json; charset=utf-8"
-        }
+        },
+        referrerPolicy: "unsafe_url"
     })
     .then((res) => res.json())
     .then((json) => {
