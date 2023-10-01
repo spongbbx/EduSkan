@@ -224,8 +224,8 @@ window.addEventListener('load', handleScroll);
 // Manually trigger the scroll event on page load to check initial state
 window.dispatchEvent(new Event('scroll'));
 
-function refreshPage() {
-    location.reload(); // This reloads the current page
+function gotowe() {
+    odp.classList.add('hidden');
 }
 
 function changePlaceholders() {
@@ -292,3 +292,5 @@ function setReadOnly(value) {
 window.onerror = function(message, source, lineno, colno, error) {
     alert(`Ups... Coś poszło nie tak :/`);
 };
+
+function addschool(){}

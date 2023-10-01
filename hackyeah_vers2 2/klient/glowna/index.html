@@ -26,7 +26,7 @@
                 <h2 id="school-kierunek"></h2>
                 <p id="chatbot-answer"></p>
                 <div class="guzik">
-                    <button class="button" id="reboot" onclick="refreshPage()">Gotowe</button>
+                    <button class="button" id="reboot" onclick="gotowe()">Gotowe</button>
                 </div>
             </div>
         </div>
@@ -38,10 +38,12 @@
                 <h1 class="logo">EduSkan</h1>
                 <nav>
                     <ul class="sidemenu" id="sidemenu">
-                        <li><a href="#analiza1">Wyszukaj szkołę</a></li>
+                        <li><a href="#analiza1">Skanuj</a></li>
                         <li><a href="#oprojekcie">O projekcie</a></li>
                         <li><a href="#autorzy">Autorzy</a></li>
                         <li><a href="#cele">Cele</a></li>
+                        <li><a href="#analiza1" onclick="addschool(); return false;">Zgłoś szkołę</a></li>
+
                     </ul>
                     <!-- Hamburger icon -->
                     <div class="hamburger" onclick="toggleMenu()">
@@ -115,9 +117,11 @@
                             <h1 class="sub-title">O projekcie</h1>
                             <!--Tytuł miejsca-->
                             <!-- Opis o projekcie -->
-                            <p class="opis">Projekt EduSkan to inicjatywa mająca na celu pomóc uczniom szkół podstawowych oraz ponadpodstawowych w wyborze odpowiedniej szkoły/uczelni i kierunku kształcenia.   </p>
-                            <p class="opis">Pomysł na aplikację powstał ze względu na to, że dostępne w Internecie aplikacje na ogół wyszukują tylko podstawowe dane teleadresowe szkoły i adres strony www. Wyszukiwarki te nie uwzględniają potrzeb edukacyjnych uczniów, ich słabych i mocnych stron oraz zainteresowań wykraczających poza skostniały podział na szkolne przedmioty. W dodatku są niekompletne i często nieaktualne. Jedna z istniejących wyszukiwarek oferuje filtrowanie szkół za pomocą rozbudowanych formularzy i wpisywania bardzo szczegółowych informacji (np. ocen z poszczególnych przedmiotów). Tego typu aplikacja działa bardzo schematycznie i uwzględnia tylko elementy przewidziane „na sztywno” w formularzu. </p>
-                            <p class="opis">Z wyszukiwarką EduSkan użytkownik porozumiewa się językiem naturalnym, wprowadzając odpowiedzi własnym językiem. Jest to możliwe dzięki zastosowaniu sztucznej inteligencji.</p>
+                            <p class="opis">Projekt EduSkan to inicjatywa mająca na celu pomóc uczniom szkół podstawowych oraz ponadpodstawowych w wyborze odpowiedniej szkoły/uczelni i kierunku kształcenia.<br><br> Pomysł na aplikację powstał ze względu na to, że dostępne
+                                w Internecie aplikacje na ogół wyszukują tylko podstawowe dane teleadresowe szkoły i adres strony www. Wyszukiwarki te nie uwzględniają potrzeb edukacyjnych uczniów, ich słabych i mocnych stron oraz zainteresowań wykraczających
+                                poza skostniały podział na szkolne przedmioty. W dodatku są niekompletne i często nieaktualne. Jedna z istniejących wyszukiwarek oferuje filtrowanie szkół za pomocą rozbudowanych formularzy i wpisywania bardzo szczegółowych
+                                informacji (np. ocen z poszczególnych przedmiotów). Tego typu aplikacja działa bardzo schematycznie i uwzględnia tylko elementy przewidziane „na sztywno” w formularzu.<br> <br>Z wyszukiwarką EduSkan użytkownik porozumiewa
+                                się językiem naturalnym, wprowadzając odpowiedzi własnymi słowami, aniżeli wybierając filtry. Jest to możliwe dzięki zastosowaniu sztucznej inteligencji.</p>
                         </div>
                         <div class="o-col-2">
                             <!--technologie opis-->

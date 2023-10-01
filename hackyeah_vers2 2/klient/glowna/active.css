@@ -67,7 +67,7 @@ link {
     color: black;
     margin: 0 auto;
     width: fit-content;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .radio input {
@@ -148,7 +148,7 @@ link {
 }
 
 .col-2 {
-    flex-basis: 600px;
+    flex-basis: 35%;
     background-color: #fffffff8;
     border-radius: 15px;
     margin: 0 auto;
@@ -328,12 +328,12 @@ h1:not(.logo) {
 .formularz {
     color: rgba(15, 27, 37);
     text-align: center;
-    padding: 5% 0 7% 0;
-    font-size: 3.4em;
+    padding: 5% 0 15px 0;
+    font-size: 3em;
 }
 
 .inputdiv {
-    padding-bottom: 3%;
+    padding-bottom: 10px;
 }
 
 .input {
@@ -856,6 +856,12 @@ nav .fa-solid {
         width: 50%;
         margin: 3% auto 4% auto;
     }
+    .formularz {
+        font-size: 40px;
+    }
+    .radio {
+        font-size: 1.2em;
+    }
 }
 
 
@@ -969,6 +975,9 @@ nav .fa-solid {
     #odp .col-2 {
         max-width: 80%;
         padding: 5%;
+    }
+    .formularz {
+        font-size: 35px;
     }
 }
 
@@ -1089,7 +1098,7 @@ nav .fa-solid {
 }
 
 .cel5 .cel .opis {
-    font-size: 13px;
+    font-size: 21px;
 }
 
 .cel5 .cel h2 {
